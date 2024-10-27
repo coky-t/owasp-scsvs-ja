@@ -1,18 +1,18 @@
 # S11. コンポーネント固有のセキュリティ (Component-Specific Security)
 
-## Control Objective
+## 管理目標
 Establish security practices and standards for various blockchain components to mitigate specific vulnerabilities associated with tokens, NFTs, vaults, and liquidity pools.
 
 ---
 
-## S11.1 Tokens (ERC20, ERC721, ERC1155)
+## S11.1 トークン (ERC20, ERC721, ERC1155) (Tokens (ERC20, ERC721, ERC1155))
 
-### Control Objective
+### 管理目標
 Ensure secure implementation and management of token standards to prevent vulnerabilities.
 
-### S11.1.A Secure Implementation and Management
+### S11.1.A 安全な実装と管理 (Secure Implementation and Management)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S11.1.A1     | Verify that the totalSupply value is consistent during token minting operations, ensuring that callbacks do not result in incorrect values. |    | ✓  | ✓  |     |
 | S11.1.A2     | Some tokens have multiple addresses associated with them, which can introduce vulnerabilities. Ensure all token addresses are managed and verified securely to avoid related risks. |    | ✓  | ✓  |     |
@@ -23,14 +23,14 @@ Ensure secure implementation and management of token standards to prevent vulner
 
 ---
 
-## S11.2 NFT Security
+## S11.2 NFT セキュリティ (NFT Security)
 
-### Control Objective
+### 管理目標
 Implement best practices for non-fungible tokens to safeguard against vulnerabilities.
 
-### S11.2.A Best Practices for Non-Fungible Tokens
+### S11.2.A 非代替性トークンのベストプラクティス (Best Practices for Non-Fungible Tokens)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S11.2.A1     | Implement standards and best practices for NFT creation, management, and transfer to prevent common vulnerabilities. |    | ✓  | ✓  |     |
 | S11.2.A2     | Ensure proper metadata integrity and prevent unauthorized minting or transfers. |    | ✓  | ✓  |     |
@@ -38,54 +38,54 @@ Implement best practices for non-fungible tokens to safeguard against vulnerabil
 
 ---
 
-## S11.3 Vaults
+## S11.3 保管室 (Vaults)
 
-### Control Objective
+### 管理目標
 Ensure secure asset storage and management within vault systems.
 
-### S11.3.A Secure Asset Storage and Management
+### S11.3.A 安全な資産保管と管理 (Secure Asset Storage and Management)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S11.3.A1     | Address potential overhead issues associated with withdrawing stETH or wstETH, including queue times and withdrawal limits, to ensure smooth operations. |    | ✓  | ✓  |     |
 | S11.3.A2     | Handle conversions between stETH and wstETH carefully to avoid potential issues due to the rebasing nature of stETH. |    | ✓  | ✓  |     |
 
 ---
 
-## S11.4 Liquid Staking
+## S11.4 流動的ステーキング (Liquid Staking)
 
-### Control Objective
+### 管理目標
 Ensure secure staking mechanisms to protect users' assets.
 
-### S11.4.A Secure Staking Mechanisms
+### S11.4.A 安全なステーキングメカニズム (Secure Staking Mechanisms)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S11.4.A1     | Verify that mechanisms for detaching sfrxETH from frxETH are robust to prevent discrepancies and ensure accurate reward transfers, particularly when controlled by centralized entities. |    | ✓  | ✓  |     |
 | S11.4.A2     | Monitor potential future changes in the sfrxETH/ETH rate and ensure users are adequately forewarned to mitigate risks associated with rate fluctuations. |    | ✓  | ✓  |     |
 
 ---
 
-## S11.5 Liquidity Pools (AMMs)
+## S11.5 流動性プール (AMM) (Liquidity Pools (AMMs))
 
-### Control Objective
+### 管理目標
 Establish security measures in automated market makers.
 
-### S11.5.A Security in Automated Market Makers
+### S11.5.A 自動マーケットメーカーのセキュリティ (Security in Automated Market Makers)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S11.5.A1     | [WIP/Will be removed]                                                     |    |    |    |     |
 
 ---
 
-## S11.6 Uniswap V4 Hook
+## S11.6 Uniswap V4 フック (Uniswap V4 Hook)
 
-### Control Objective
+### 管理目標
 Ensure secure integration and customization of Uniswap components.
 
-### S11.6.A Secure Integration and Customization
+### S11.6.A 安全な統合とカスタマイズ (Secure Integration and Customization)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S11.6.A1     | Verify the correct usage of Uniswap’s TickMath and FullMath libraries to ensure proper handling of unchecked arithmetic operations, adhering to version-specific Solidity considerations. |    | ✓  | ✓  |     |

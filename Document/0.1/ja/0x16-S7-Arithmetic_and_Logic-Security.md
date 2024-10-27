@@ -1,18 +1,18 @@
-# S7. 算術とロジックのセキュリティ (Arithmetic and Logic Security)
+# S7. 演算とロジックのセキュリティ (Arithmetic and Logic Security)
 
-## Control Objective
+## 管理目標
 Establish secure arithmetic and logic practices to prevent vulnerabilities such as overflow/underflow and ensure the integrity of calculations within smart contracts.
 
 ---
 
-## S7.1 Preventing Overflow/Underflow
+## S7.1 オーバーフロー/アンダーフローの防止 (Preventing Overflow/Underflow)
 
-### Control Objective
+### 管理目標
 Implement safe arithmetic practices to prevent overflow and underflow vulnerabilities that can compromise contract functionality and security.
 
-### S7.1.A Use of Safe Math Libraries
+### S7.1.A 安全な数学ライブラリの使用 (Use of Safe Math Libraries)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S7.1.A1      | Verify that explicit type casting does not lead to overflow or underflow issues. |    | ✓  | ✓  |     |
 | S7.1.A2      | Verify that integer arithmetic operations do not exceed their bounds to prevent integer overflow or underflow vulnerabilities. |    | ✓  | ✓  |     |
@@ -23,22 +23,22 @@ Implement safe arithmetic practices to prevent overflow and underflow vulnerabil
 | S7.1.A7      | Confirm that inline assembly operations handle division by zero and overflow/underflow according to desired behavior and revert appropriately. |    | ✓  | ✓  |     |
 | S7.1.A8      | Implement checks to handle cases where operations might introduce unintended precision issues or rounding errors. |    | ✓  | ✓  |     |
 
-### S7.1.B Fixed-Point Arithmetic
+### S7.1.B 固定小数点演算 (Fixed-Point Arithmetic)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S7.1.B1      | Verify that fixed-point arithmetic operations are performed safely to prevent overflow, underflow, and precision loss. |    | ✓  | ✓  |     |
 
 ---
 
-## S7.2 Arithmetic Integrity
+## S7.2 演算の完全性 (Arithmetic Integrity)
 
-### Control Objective
+### 管理目標
 Ensure that all calculations and logical operations within the smart contract are performed correctly to maintain data integrity and prevent manipulation.
 
-### S7.2.A Secure Calculations and Logic
+### S7.2.A 安全な計算とロジック (Secure Calculations and Logic)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S7.2.A1      | Ensure that price or rate calculations derived from asset balances are protected from manipulation, considering attack vectors like flash loans and donations. |    | ✓  | ✓  |     |
 | S7.2.A2      | Ensure that the use of structs and arrays does not lead to data corruption or incorrect values due to storage encoding issues. |    | ✓  | ✓  |     |
@@ -51,9 +51,9 @@ Ensure that all calculations and logical operations within the smart contract ar
 | S7.2.A9 | Ensure that logical operators such as `==`, `!=`, `&&`, `||`, and `!` are used correctly, especially when test coverage may be limited. |  | ✓  | ✓  |  |
 
 
-### S7.2.B Precondition and Postcondition Checks
+### S7.2.B 前提条件と事後条件のチェック (Precondition and Postcondition Checks)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S7.2.B1      | Ensure that multiplication is performed before division to maintain precision in calculations. |    | ✓  | ✓  |     |
 | S7.2.B2      | Ensure that the request confirmation number is high enough to mitigate risks associated with chain re-orgs. |    | ✓  | ✓  |     |

@@ -1,31 +1,31 @@
 # S4. アクセス制御と認証 (Access Control and Authentication)
 
-## Control Objective
+## 管理目標
 Establish robust access control and authentication mechanisms to ensure that only authorized entities can perform sensitive operations within the smart contract. This includes implementing role-based access control (RBAC), secure authorization mechanisms, and decentralized identity management.
 
 ---
 
-## S4.1 Role-Based Access Control (RBAC)
+## S4.1 ロールベースのアクセス制御 (RBAC) (Role-Based Access Control (RBAC))
 
-### Control Objective
+### 管理目標
 Implement role-based access control to manage permissions and ensure that only authorized users can access specific functions. This includes validating identities, applying the least privilege principle, and ensuring appropriate access controls are in place.
 
-### S4.1.A Multi-Signature Schemes
+### S4.1.A マルチ署名スキーム (Multi-Signature Schemes)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.1.A1      | Ensure that the visibility modifier for all functions is appropriate, preventing unnecessary exposure of internal functions. |    | ✓  | ✓  |     |
 
-### S4.1.B Identity Verification
+### S4.1.B 身元検証 (Identity Verification)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.1.B1      | Validate that unexpected addresses do not result in unintended behaviors, particularly when these addresses refer to contracts within the same protocol. |    | ✓  | ✓  |     |
 | S4.1.B2      | Verify that functions like ecrecover handle all potential null addresses properly to avoid vulnerabilities arising from unexpected ecrecover outputs. |    | ✓  | ✓  |     |
 
-### S4.1.C Least Privilege Principle
+### S4.1.C 最小権限の原則 (Least Privilege Principle)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.1.C1      | Use msg.sender instead of tx.origin for authorization to avoid potential abuse from malicious contracts; include checks like require(tx.origin == msg.sender) to ensure the sender is an EOA. |    | ✓  | ✓  |     |
 | S4.1.C2      | Certain addresses might be blocked or restricted from receiving tokens (e.g., LUSD). Ensure that address restrictions are properly managed and verified. |    | ✓  | ✓  |     |
@@ -34,21 +34,21 @@ Implement role-based access control to manage permissions and ensure that only a
 
 ---
 
-## S4.2 Authorization Mechanisms
+## S4.2 認可メカニズム (Authorization Mechanisms)
 
-### Control Objective
+### 管理目標
 Implement secure authorization mechanisms to safeguard critical functions and sensitive operations, ensuring only authorized entities can perform these actions.
 
-### S4.2.A Secure Access to Critical Functions
+### S4.2.A 重要な機能への安全なアクセス (Secure Access to Critical Functions)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.2.A1      | Verify that the contract uses msg.sender for authorization instead of tx.origin to avoid vulnerabilities related to contracts that forward calls from legitimate users. |    | ✓  | ✓  |     |
 | S4.2.A2      | Implement and verify appropriate access controls for functions that modify contract state or perform sensitive operations to prevent unauthorized access. |    | ✓  | ✓  |     |
 
-### S4.2.B Timed Permissions
+### S4.2.B 期限付きパーミッション (Timed Permissions)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.2.B1      | Ensure that msg.sender validation is properly implemented when using Merkle trees to maintain security and prevent unauthorized access. |    | ✓  | ✓  |     |
 | S4.2.B2      | Use whitelisting to restrict interactions to a specific set of addresses, providing additional security against malicious actors. |    | ✓  | ✓  |     |
@@ -56,14 +56,14 @@ Implement secure authorization mechanisms to safeguard critical functions and se
 
 ---
 
-## S4.3 Decentralized Identity
+## S4.3 分散型アイデンティティ (Decentralized Identity)
 
-### Control Objective
+### 管理目標
 Implement decentralized identity solutions to ensure secure and reliable identity verification and management while maintaining user privacy.
 
-### S4.3.A Decentralized Identifiers (DIDs)
+### S4.3.A 分散識別子 (DID) (Decentralized Identifiers (DIDs))
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.3.A1      | Verify that the smart contract for handling DIDs adheres to the latest standards and best practices for decentralized identity management. |    | ✓  | ✓  |     |
 | S4.3.A2      | Ensure that the DID management contract includes mechanisms to prevent unauthorized modifications and ensure the integrity of DID records. |    | ✓  | ✓  |     |
@@ -71,9 +71,9 @@ Implement decentralized identity solutions to ensure secure and reliable identit
 | S4.3.A4      | Verify that the smart contract supports reliable DID resolution and includes mechanisms for handling conflicts and updates. |    | ✓  | ✓  |     |
 | S4.3.A5      | Ensure that the smart contract maintains the privacy and confidentiality of DID-related information throughout its lifecycle. |    | ✓  | ✓  |     |
 
-### S4.3.B Verifiable Credentials
+### S4.3.B 検証可能なクレデンシャル (Verifiable Credentials)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S4.3.B1      | Verify that the smart contract manages verifiable credentials in a way that ensures their authenticity and integrity through cryptographic proofs. |    | ✓  | ✓  |     |
 | S4.3.B2      | Ensure that the issuance process of verifiable credentials by the smart contract includes proper identity verification and validation procedures. |    | ✓  | ✓  |     |

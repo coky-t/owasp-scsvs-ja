@@ -1,18 +1,18 @@
 # S5. 安全な相互作用と通信 (Secure Interactions and Communications)
 
-## Control Objective
+## 管理目標
 Establish secure interaction protocols for smart contracts to ensure safe communication between contracts, external oracles, and cross-chain integrations. This includes managing contract interactions, securing oracle integrations, handling cross-chain interactions, and ensuring the security of bridges.
 
 ---
 
-## S5.1 Contract Interactions
+## S5.1 コントラクトインタラクション (Contract Interactions)
 
-### Control Objective
+### 管理目標
 Ensure that all interactions between contracts are secure, minimizing risks associated with external calls, maintaining a minimal trusted surface, and handling errors appropriately.
 
-### S5.1.A Secure Message Passing
+### S5.1.A 安全なメッセージパッシング (Secure Message Passing)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.1.A1      | Ensure that calls to inherited functions from LzApp use recommended approaches (e.g., _lzSend) to avoid vulnerabilities associated with direct calls to lzEndpoint.send. |    | ✓  | ✓  |     |
 | S5.1.A2      | Ensure that when interacting with external contracts, the msg.sender remains consistent to avoid security issues related to unexpected changes in sender context. |    | ✓  | ✓  |     |
@@ -20,9 +20,9 @@ Ensure that all interactions between contracts are secure, minimizing risks asso
 | S5.1.A4      | Missing verification of interacting pools can introduce risks. Ensure that all pools are properly verified before interaction to prevent potential security issues. |    | ✓  | ✓  |     |
 | S5.1.A5      | Verify that the low-level .delegatecall() is properly managed, acknowledging that it converts the return value to a Boolean without providing the execution outcome. |    | ✓  | ✓  |     |
 
-### S5.1.B Minimal Trusted Surface
+### S5.1.B 最小限の信頼できる領域 (Minimal Trusted Surface)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.1.B1      | Verify that the smart contract minimizes its trusted surface by only interacting with other contracts and systems through well-defined and limited interfaces. |    | ✓  | ✓  |     |
 | S5.1.B2      | Ensure that the smart contract includes checks to validate the trustworthiness and authenticity of interacting parties before executing sensitive operations. |    | ✓  | ✓  |     |
@@ -32,14 +32,14 @@ Ensure that all interactions between contracts are secure, minimizing risks asso
 
 ---
 
-## S5.2 Oracle Integrations
+## S5.2 オラクル統合 (Oracle Integrations)
 
-### Control Objective
+### 管理目標
 Ensure that oracle integrations provide secure, reliable, and tamper-proof data feeds while maintaining data integrity and handling failures appropriately.
 
-### S5.2.A Secure Data Feeds
+### S5.2.A 安全なデータフィード (Secure Data Feeds)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.2.A1      | Verify that the smart contract uses oracles that provide secure and tamper-proof data feeds, including checks for data integrity and authenticity. |    | ✓  | ✓  |     |
 | S5.2.A2      | Ensure that the smart contract validates the data received from oracles to prevent malicious or incorrect data from affecting contract operations. |    | ✓  | ✓  |     |
@@ -47,9 +47,9 @@ Ensure that oracle integrations provide secure, reliable, and tamper-proof data 
 | S5.2.A4      | Verify that the integration with oracles follows best practices for data security, including encryption and secure communication channels. |    | ✓  | ✓  |     |
 | S5.2.A5      | Ensure that the smart contract's oracle integration is designed to handle any potential discrepancies or conflicts in data from multiple sources. |    | ✓  | ✓  |     |
 
-### S5.2.B Decentralized Oracles
+### S5.2.B 分散型オラクル (Decentralized Oracles)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.2.B1      | Verify that the smart contract uses decentralized oracles to enhance data reliability and prevent single points of failure or manipulation. |    | ✓  | ✓  |     |
 | S5.2.B2      | Ensure that the smart contract includes mechanisms to validate the consensus or majority opinion of decentralized oracles before taking actions based on their data. |    | ✓  | ✓  |     |
@@ -59,23 +59,23 @@ Ensure that oracle integrations provide secure, reliable, and tamper-proof data 
 
 ---
 
-## S5.3 Cross-Chain Interactions
+## S5.3 クロスチェーンインタラクション
 
-### Control Objective
+### 管理目標
 Ensure secure handling of external calls and atomic swaps during cross-chain interactions to maintain operational reliability and prevent fraud.
 
-### S5.3.A Handling External Calls Securely
+### S5.3.A 外部コールの安全な処理 (Handling External Calls Securely)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.3.A1      | Ensure that parameters for Chainlink VRF (Verifiable Random Function) are thoroughly validated to prevent the fulfillRandomWord function from returning incorrect values instead of reverting. |    | ✓  | ✓  |     |
 | S5.3.A2      | Implement robust security checks for cross-chain messaging to ensure correct permissions and intended functionality. |    | ✓  | ✓  |     |
 | S5.3.A3      | Verify that contracts created using the CREATE opcode handle block reorganizations securely to prevent unexpected eliminations. |    | ✓  | ✓  |     |
 | S5.3.A4      | Ensure robust cross-chain messaging security checks to prevent replay attacks where signatures valid on one chain might be exploited on another. |    | ✓  | ✓  |     |
 
-### S5.3.B Atomic Swaps
+### S5.3.B アトミックスワップ (Atomic Swaps)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.3.B1      | Verify that the smart contract supports atomic swaps with robust mechanisms to ensure that swaps are completed successfully or not executed at all. |    | ✓  | ✓  |     |
 | S5.3.B2      | Ensure that the smart contract includes checks to validate the atomic swap conditions and prevent partial or fraudulent swaps. |    | ✓  | ✓  |     |
@@ -84,14 +84,14 @@ Ensure secure handling of external calls and atomic swaps during cross-chain int
 
 ---
 
-## S5.4 Bridges
+## S5.4 ブリッジ (Bridges)
 
-### Control Objective
+### 管理目標
 Ensure the security of cross-chain transactions by implementing robust validation and verification mechanisms to prevent fraud and maintain data integrity.
 
-### S5.4.A Cross-Chain Transaction Security
+### S5.4.A クロスチェーントランザクションセキュリティ (Cross-Chain Transaction Security)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S5.4.A1      | Verify that the smart contract for cross-chain transactions includes robust mechanisms for verifying and validating transactions across different chains. |    | ✓  | ✓  |     |
 | S5.4.A2      | Ensure that the smart contract prevents double-spending and replay attacks in cross-chain transactions by implementing appropriate security checks. |    | ✓  | ✓  |     |

@@ -1,40 +1,40 @@
 # S8. サービス拒否 (Denial of Service (DoS))
 
-## Control Objective
+## 管理目標
 Establish practices and mechanisms to prevent Denial of Service (DoS) attacks that can disrupt contract functionality and availability.
 
 ---
 
-## S8.1 Gas Limits
+## S8.1 ガス制限 (Gas Limits)
 
-### Control Objective
+### 管理目標
 Ensure that contract design and function implementations are efficient in gas usage to mitigate risks associated with out-of-gas errors and related vulnerabilities.
 
-### S8.1.A Efficient Loop and Function Design
+### S8.1.A 効率的なループと関数の設計 (Efficient Loop and Function Design)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S8.1.A1      | Ensure that contracts are protected against insufficient gas griefing attacks by carefully managing gas consumption in critical functions. |    | ✓  | ✓  |     |
 | S8.1.A2      | Ensure that systems like the RocketDepositPool contract handle failures in functions like burn() gracefully. |    | ✓  | ✓  |     |
 | S8.1.A3      | Verify that gas usage in functions and loops is efficient to avoid out-of-gas errors. |    | ✓  | ✓  |     |
 | S8.1.A4      | Implement mechanisms to prevent denial of service attacks due to block gas limits, ensuring that transactions or operations do not exceed the gas limit constraints. |    | ✓  | ✓  |     |
 
-### S8.1.B Fallback Mechanisms
+### S8.1.B フォールバックメカニズム (Fallback Mechanisms)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S8.1.B1      | Ensure that try/catch blocks are provided with adequate gas to avoid failures and unexpected behavior in case of errors. |    | ✓  | ✓  |     |
 
 ---
 
-## S8.2 Resilience Against Resource Exhaustion
+## S8.2 資源枯渇に対する耐性 (Resilience Against Resource Exhaustion)
 
-### Control Objective
+### 管理目標
 Implement strategies to protect contracts from resource exhaustion attacks that can lead to DoS scenarios.
 
-### S8.2.A Rate Limiting
+### S8.2.A レート制限 (Rate Limiting)
 
-| Ref          | Requirement                                                                 | L1 | L2 | L3 | SWE |
+| 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S8.2.A1      | Avoid using blocking mechanisms that could lead to a Denial-of-Service (DoS) attack. |    | ✓  | ✓  |     |
 | S8.2.A2      | Protect against potential DoS in functions like supportsERC165InterfaceUnchecked() by handling excessive data queries efficiently. |    | ✓  | ✓  |     |
