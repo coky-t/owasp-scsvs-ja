@@ -3,18 +3,18 @@
 ## S1.1 セキュアデザインパターン (Secure Design Patterns)
 
 ### 管理目標
-Ensure that smart contracts are designed with modularity, upgradability, and separation of concerns to enable secure operations, upgrades, and maintenance. Contracts should be designed to minimize security risks related to complex upgrades, privilege transfers, and mismanagement of dependencies.
+スマートコントラクトがモジュール性、アップグレード可能性、関心の分離を考慮して設計され、安全な運用、アップグレード、保守が可能であることを確認します。コントラクトは、複雑なアップグレード、権限移譲、依存関係の不適切な管理に関するセキュリティリスクを最小限に抑えるように設計されるべきです。
 ### セキュリティ検証要件
 ### S1.1.A モジュール性とアップグレード可能性 (Modularity and Upgradability)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.1.A1      | Verify that the contract is divided into modular components or contracts.    |    | ✓  | ✓  |     |
-| S1.1.A2      | Ensure that upgrade mechanisms are designed to allow secure and controlled updates. |    | ✓  | ✓  |     |
-| S1.1.A3      | Check that module boundaries are clearly defined and that dependencies are managed. |    | ✓  | ✓  |     |
-| S1.1.A4      | Ensure that changes to storage variable order or types between contract versions are managed to avoid storage collisions and data corruption. |    | ✓  | ✓  |     |
-| S1.1.A5      | Verify that critical privilege transfers are conducted in a two-step process to ensure secure and reliable privilege changes. |    |    | ✓  |     |
-| S1.1.A6      | Verify that the data location of parameters and return variables is correctly handled when overriding internal and public functions to avoid generating invalid code during virtual function calls. |    |    | ✓  |     |
+| S1.1.A1      | コントラクトがモジュラーコンポーネントやコントラクトに分割されていることを検証します。 |    | ✓  | ✓  |     |
+| S1.1.A2      | アップグレードメカニズムが安全で制御されたアップデートを可能にするように設計されていることを確認します。 |    | ✓  | ✓  |     |
+| S1.1.A3      | モジュール境界が明確に定義され、依存関係が管理されていることをチェックします。 |    | ✓  | ✓  |     |
+| S1.1.A4      | コントラクトバージョン間でのストレージ変数の順序やタイプの変更が管理され、ストレージの衝突やデータの破損を避けていることを確認します。 |    | ✓  | ✓  |     |
+| S1.1.A5      | 重要な権限移譲が二段階のプロセスで実施され、安全で信頼性の高い権限変更を確保していることを検証します。 |    |    | ✓  |     |
+| S1.1.A6      | 仮想関数の呼び出し時に無効なコードが生成されないように、内部関数とパブリック関数をオーバーライドする際に、パラメータやリターン変数のデータ位置が正しく処理されていることを検証します。 |    |    | ✓  |     |
 
 ### S1.1.B 関心の分離 (Separation of Concerns)
 
