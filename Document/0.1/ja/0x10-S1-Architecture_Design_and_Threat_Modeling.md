@@ -34,18 +34,18 @@
 ## S1.2 プロキシパターン (Proxy Patterns)
 
 ### 管理目標
-Ensure that proxy patterns and upgrade mechanisms are implemented securely and managed properly, to mitigate risks during contract upgrades, deprecations, and transitions between contract versions.
+プロキシパターンとアップグレードメカニズムが安全に実装され、適切に管理されており、コントラクトアップグレード、廃止、コントラクトバージョン間の移行時のリスクを軽減していることを確認します。
 ### セキュリティ検証要件
 ### S1.2.A アップグレードメカニズム (Upgrade Mechanisms)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.2.A1      | Verify that an upgrade mechanism (e.g., proxy pattern) is implemented for the contract. |    | ✓  | ✓  |     |
-| S1.2.A2      | Ensure that the upgrade process includes safeguards against unauthorized upgrades. |    | ✓  | ✓  |     |
-| S1.2.A3      | Check that the upgrade mechanism is documented and reviewed for security.    |    | ✓  | ✓  |     |
-| S1.2.A4      | Verify that immutable variables are consistent across implementations during proxy upgrades to prevent misuse. |    |    | ✓  |     |
-| S1.2.A5      | Verify that `selfdestruct` and `delegatecall` in implementation contracts do not introduce vulnerabilities or unexpected behaviors in a proxy setup. |    |    | ✓  |     |
-| S1.2.A6      | Verify that UUPSUpgradeable contracts are protected against vulnerabilities that may affect uninitialized implementation contracts, ensuring secure upgrade mechanisms. |    |    | ✓  |     |
+| S1.2.A1      | コントラクトにアップグレードメカニズム (プロキシパターンなど) が実装されていることを検証します。 |    | ✓  | ✓  |     |
+| S1.2.A2      | アップグレードプロセスには認可されていないアップグレードに対するセーフガードを含んでいることを確認します。 |    | ✓  | ✓  |     |
+| S1.2.A3      | アップグレードメカニズムは文書化され、セキュリティがレビューされていることをチェックします。 |    | ✓  | ✓  |     |
+| S1.2.A4      | プロキシのアップグレード時に実装間で不変変数が一貫しており、誤用を防いでいることを検証します。 |    |    | ✓  |     |
+| S1.2.A5      | プロキシのセットアップで実装コントラクトの `selfdestruct` および `delegatecall` が脆弱性や予期しない動作をもたらさないことを検証します。 |    |    | ✓  |     |
+| S1.2.A6      | UUPSUpgradeable コントラクトが初期化されていない実装コントラクトに影響を及ぼす可能性のある脆弱性から保護され、安全なアップグレードメカニズムを確保していることを検証します。 |    |    | ✓  |     |
 
 ### S1.2.B 非推奨の管理 (Managing Deprecation)
 
