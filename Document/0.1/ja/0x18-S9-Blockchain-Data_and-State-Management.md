@@ -3,8 +3,6 @@
 ## 管理目標
 Establish practices for effective management of blockchain data and state to ensure security, efficiency, and integrity of contract interactions.
 
----
-
 ## S9.1 状態管理 (State Management)
 
 ### 管理目標
@@ -26,7 +24,6 @@ Ensure efficient and secure handling of state within smart contracts to prevent 
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S9.1.B1      | Verify that global state updates are correctly handled when working with memory copies to ensure accurate state management. |    | ✓  | ✓  |     |
 
----
 
 ## S9.2 データプライバシー (Data Privacy)
 
@@ -61,8 +58,6 @@ Ensure that sensitive data within contracts is secured and that privacy measures
 | S9.2.D1      | Verify that confidential contracts use cryptographic techniques to hide contract state and execution details from unauthorized parties. |    | ✓  | ✓  |     |
 | S9.2.D2      | Ensure that only parties with appropriate permissions can access data within confidential contracts. |    | ✓  | ✓  |     |
 
----
-
 ## S9.3 イベントログ記録 (Event Logging)
 
 ### 管理目標
@@ -82,7 +77,6 @@ Implement transparent and secure logging practices to ensure traceability and de
 | S9.3.B1      | Implement tools and processes for analyzing event logs to detect anomalies or unauthorized changes. |    | ✓  | ✓  |     |
 | S9.3.B2      | Set up alerts for unusual patterns or discrepancies in logged events. |    | ✓  | ✓  |     |
 
----
 
 ## S9.4 分散ストレージ (Decentralized Storage)
 

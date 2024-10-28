@@ -3,7 +3,6 @@
 ## 管理目標
 Establish practices and mechanisms to prevent Denial of Service (DoS) attacks that can disrupt contract functionality and availability.
 
----
 
 ## S8.1 ガス制限 (Gas Limits)
 
@@ -25,7 +24,6 @@ Ensure that contract design and function implementations are efficient in gas us
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S8.1.B1      | Ensure that try/catch blocks are provided with adequate gas to avoid failures and unexpected behavior in case of errors. |    | ✓  | ✓  |     |
 
----
 
 ## S8.2 資源枯渇に対する耐性 (Resilience Against Resource Exhaustion)
 
