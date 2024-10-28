@@ -20,16 +20,16 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.1.B1      | Verify that different functionalities are separated into distinct contracts or modules. |    | ✓  | ✓  |     |
-| S1.1.B2      | Ensure that each module has a single responsibility and minimal dependencies on other modules. |    | ✓  | ✓  |     |
-| S1.1.B3      | Check for any cross-module dependencies that could lead to security risks.   |    | ✓  | ✓  |     |
-| S1.1.B4      | Ensure that the protocol maintains consistent and reliable operation during the transfer of privileges, with considerations for various edge cases. |    |    | ✓  |     |
-| S1.1.B5      | Verify that proxy contracts use the `onlyInitializing` modifier instead of `initializer` to ensure proper initialization. |    |    | ✓  |     |
-| S1.1.B6      | Verify that storage layouts between contract versions are consistent to prevent data corruption and unpredictable behavior. |    |    | ✓  |     |
-| S1.1.B7      | Ensure that immutable variables are consistent across implementations during proxy upgrades. |    |    | ✓  |     |
-| S1.1.B8      | Verify that implementations of the same logic across different parts of the contract are consistent to avoid introducing errors or vulnerabilities. |    |    | ✓  |     |
-| S1.1.B9      | Ensure that ETH and WETH are handled separately with appropriate checks to avoid errors due to incorrect assumptions about exclusivity. |    |    | ✓  |     |
-| S1.1.B10     | Verify that contracts with constructors are not used in a proxy setup, and initializer logic is used instead. |    |    | ✓  |     |
+| S1.1.B1      | さまざまな機能が個別のコントラクトやモジュールに分離されていることを検証します。 |    | ✓  | ✓  |     |
+| S1.1.B2      | 各モジュールが単一の責任を持ち、他のモジュールへの依存関係が最小限であることを確認します。 |    | ✓  | ✓  |     |
+| S1.1.B3      | セキュリティリスクにつながる可能性のある、モジュール間の依存関係についてチェックします。 |    | ✓  | ✓  |     |
+| S1.1.B4      | さまざまなエッジケースを考慮して、権限移譲時にプロトコルが一貫性と信頼性の高い動作を維持することを確認します。 |    |    | ✓  |     |
+| S1.1.B5      | プロキシコンストラクトが `initializer` の代わりに `onlyInitializing` 修飾子を使用して、適切な初期化を確保していることを検証します。 |    |    | ✓  |     |
+| S1.1.B6      | コントラクトバージョン間のストレージレイアウトが一貫しており、データの破損や予期しない動作を防いでいることを検証します。 |    |    | ✓  |     |
+| S1.1.B7      | プロキシアップグレード時に実装間で不変変数が一貫していることを確認します。 |    |    | ✓  |     |
+| S1.1.B8      | コントラクトのさまざまな部分にまたがる同じロジックの実装が一貫しており、エラーや脆弱性の発生を避けていることを検証します。 |    |    | ✓  |     |
+| S1.1.B9      | 適切なチェックで ETH と WETH が個別に処理されており、排他性に関する正しくない想定によるエラーを回避していることを確認します。 |    |    | ✓  |     |
+| S1.1.B10     | プロキシのセットアップでコンストラクタを有するコントラクトが使用されておらず、代わりに初期化ロジックが使用されていることを検証します。 |    |    | ✓  |     |
 
 ## S1.2 プロキシパターン (Proxy Patterns)
 
