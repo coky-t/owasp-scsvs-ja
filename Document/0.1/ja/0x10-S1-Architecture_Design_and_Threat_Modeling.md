@@ -53,9 +53,9 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.2.B1      | Verify that deprecated contract versions are correctly marked and handled.   |    |    | ✓  |     |
-| S1.2.B2      | Ensure that access to deprecated versions is restricted or disabled.         |    |    | ✓  |     |
-| S1.2.B3      | Check that migration paths from deprecated versions to new versions are secure. |    |    | ✓  |     |
+| S1.2.B1      | 非推奨のコントラクトバージョンが正しくマークされ、処理されていることを検証します。 |    |    | ✓  |     |
+| S1.2.B2      | 非推奨バージョンへのアクセスが制限または無効にされていることを確認します。  |    |    | ✓  |     |
+| S1.2.B3      | 非推奨バージョンから新しいバージョンへの移行パスが安全であることをチェックします。 |    |    | ✓  |     |
 
 ### S1.2.C 透過プロキシと不透過プロキシ (Transparent vs. Opaque Proxies)
 
