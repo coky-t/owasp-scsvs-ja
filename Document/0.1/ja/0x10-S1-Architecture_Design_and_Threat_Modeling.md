@@ -93,6 +93,6 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.3.C1      | Verify that mitigations are implemented for high-priority risks.             |    | ✓  | ✓  |     |
-| S1.3.C2      | Ensure that mitigation strategies are documented and tested.                 |    | ✓  | ✓  |     |
-| S1.3.C3      | Check that the effectiveness of implemented mitigations is reviewed and validated. |    | ✓  | ✓  |     |
+| S1.3.C1      | 優先度の高いリスクに対して緩和策が実施されていることを検証します。          |    | ✓  | ✓  |     |
+| S1.3.C2      | 緩和戦略が文書化され、テストされていることを確認します。                    |    | ✓  | ✓  |     |
+| S1.3.C3      | 実施した緩和策の有効性がレビューされ、検証されていることをチェックします。  |    | ✓  | ✓  |     |
