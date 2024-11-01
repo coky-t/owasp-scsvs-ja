@@ -57,15 +57,15 @@
 | S1.2.B2      | 非推奨バージョンへのアクセスが制限または無効にされていることを確認します。  |    |    | ✓  |     |
 | S1.2.B3      | 非推奨バージョンから新しいバージョンへの移行パスが安全であることをチェックします。 |    |    | ✓  |     |
 
-### S1.2.C 透過プロキシと不透過プロキシ (Transparent vs. Opaque Proxies)
+### S1.2.C 透過プロキシと非透過プロキシ (Transparent vs. Opaque Proxies)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.2.C1      | Verify whether a transparent or opaque proxy pattern is used and its suitability for the contract. |    | ✓  | ✓  |     |
-| S1.2.C2      | Ensure that the proxy pattern is correctly implemented and does not introduce vulnerabilities. |    | ✓  | ✓  |     |
-| S1.2.C3      | Check that the proxy pattern’s choice is documented and justified.           |    | ✓  | ✓  |     |
-| S1.2.C4      | Ensure that uninitialized contracts cannot be taken over by attackers and that initialization functions are secured with the correct modifiers. |    |    | ✓  |     |
-| S1.2.C5      | Verify that `TransparentUpgradeableProxy` and similar proxy patterns handle selector clashes and non-decodable calldata correctly to maintain transparency. |    |    | ✓  |     |
+| S1.2.C1      | 透過プロキシと非透過プロキシのどちらが使用されているか、およびそれがコントラクトに適しているかどうかを検証します。 |    | ✓  | ✓  |     |
+| S1.2.C2      | プロキシパターンが正しく実装され、脆弱性をもたらさないことを確認します。    |    | ✓  | ✓  |     |
+| S1.2.C3      | プロキシパターンの選択が文書化され、正当化されていることをチェックします。  |    | ✓  | ✓  |     |
+| S1.2.C4      | 初期化されていないコントラクトが攻撃者に乗っ取られないようにし、初期化関数が正しい修飾子で保護されていることを確認します。 |    |    | ✓  |     |
+| S1.2.C5      | `TransparentUpgradeableProxy` および同様のプロキシパターンがセレクタの衝突とデコード不可能なコールデータを正しく処理して透過性を維持していることを検証します。 |    |    | ✓  |     |
 
 ## S1.3 脅威モデリング (Threat Modeling)
 
