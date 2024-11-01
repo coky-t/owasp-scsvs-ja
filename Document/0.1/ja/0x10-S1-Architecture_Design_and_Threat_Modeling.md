@@ -85,9 +85,9 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.3.B1      | Verify that risk assessments are performed for identified threats.           |    | ✓  | ✓  |     |
-| S1.3.B2      | Ensure that risks are prioritized based on their potential impact and likelihood. |    | ✓  | ✓  |     |
-| S1.3.B3      | Check that risk assessment results are documented and reviewed.              |    | ✓  | ✓  |     |
+| S1.3.B1      | 特定した脅威に対してリスク評価が実施されていることを検証します。            |    | ✓  | ✓  |     |
+| S1.3.B2      | リスクはその潜在的な影響度と発生可能性に基づいて優先順位付けされていることを確認します。 |    | ✓  | ✓  |     |
+| S1.3.B3      | リスク評価の結果が文書化され、レビューされていることをチェックします。      |    | ✓  | ✓  |     |
 
 ### S1.3.C 緩和策の実施 (Implementing Mitigations)
 
