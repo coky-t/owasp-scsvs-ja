@@ -70,16 +70,16 @@
 ## S1.3 脅威モデリング (Threat Modeling)
 
 ### 管理目標
-Identify, assess, and mitigate security threats for smart contract systems by implementing a thorough threat modeling process, ensuring that risks are minimized and protections are in place for critical contract features.
+徹底した脅威モデリングプロセスを実施することで、スマートコントラクトシステムのセキュリティ脅威を特定、評価、緩和し、リスクを最小限に抑え、重要なコントラクト機能に対して保護が適切にあることを確認します。
 ### セキュリティ検証要件
 ### S1.3.A 脅威の特定 (Identifying Threats)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S1.3.A1      | Verify that potential threats are identified and documented.                 | ✓  | ✓  | ✓  |     |
-| S1.3.A2      | Ensure that the threat identification process includes input from security experts. |    | ✓  | ✓  |     |
-| S1.3.A3      | Check that threats are categorized based on their impact and likelihood.     |    | ✓  | ✓  |     |
-| S1.3.A4      | Implement protections against front-running in governor proposal creation to prevent attackers from blocking proposals or gaining undue advantages. |    |    | ✓  |     |
+| S1.3.A1      | 潜在的な脅威が特定され、文書化されていることを検証します。                  | ✓  | ✓  | ✓  |     |
+| S1.3.A2      | 脅威の特定プロセスにセキュリティ専門家からの意見が含まれていることを確認します。 |    | ✓  | ✓  |     |
+| S1.3.A3      | 脅威がその影響度と発生可能性に基づいて分類されていることをチェックします。  |    | ✓  | ✓  |     |
+| S1.3.A4      | フロントランニングに対する保護を実装して、ガバナー提案の作成において、攻撃者が提案をブロックしたり不当な利益を得ることを防ぎます。 |    |    | ✓  |     |
 
 ### S1.3.B リスクの評価 (Assessing Risks)
 
