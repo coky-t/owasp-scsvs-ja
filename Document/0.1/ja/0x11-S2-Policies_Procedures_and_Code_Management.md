@@ -19,11 +19,11 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S2.1.B1      | Verify that all smart contract code changes are reviewed by at least two independent developers with expertise in smart contract security before merging to the main branch. |    | ✓  | ✓  |     |
-| S2.1.B2      | Ensure that code reviews of smart contracts involve automated static analysis tools specifically designed for smart contracts, and that all flagged issues are addressed or documented prior to merging. |    | ✓  | ✓  |     |
-| S2.1.B3      | Check that the code review process for smart contracts includes a thorough analysis for vulnerabilities such as reentrancy attacks, integer overflows, and improper access control. |    | ✓  | ✓  |     |
-| S2.1.B4      | Verify that code reviews include adherence to smart contract development standards, such as the use of safe math libraries and secure design patterns. |    | ✓  | ✓  |     |
-| S2.1.B5      | Ensure that code reviews incorporate a checklist of common smart contract vulnerabilities, and that each item on the list is addressed before code is approved. |    | ✓  | ✓  |     |
+| S2.1.B1      | すべてのスマートコントラクトのコード変更が、メインブランチにマージする前に、スマートコントラクトセキュリティに精通した二人の独立した開発者によってレビューされていることを検証します。 |    | ✓  | ✓  |     |
+| S2.1.B2      | スマートコントラクトのコードレビューには、スマートコントラクト専用に設計された自動静的解析ツールを使用し、フラグが立てられた問題はすべて、マージ前に対処されるか文書化されていることを確認します。 |    | ✓  | ✓  |     |
+| S2.1.B3      | スマートコントラクトのコードレビュープロセスには、再入攻撃、整数オーバーフロー、不適切なアクセス制御などの脆弱性の徹底的な分析を含むことをチェックします。 |    | ✓  | ✓  |     |
+| S2.1.B4      | コードレビューには、安全な数学ライブラリやセキュアデザインパターンの使用など、スマートコントラクト開発標準への準拠を含むことを検証します。 |    | ✓  | ✓  |     |
+| S2.1.B5      | コードレビューには一般的なスマートコントラクトの脆弱性のチェックリストを組み込んでいること、およびコードが承認される前にそのリストの各項目が対処されていることを確認します。 |    | ✓  | ✓  |     |
 
 ## S2.2 コードの明瞭性 (Code Clarity)
 
