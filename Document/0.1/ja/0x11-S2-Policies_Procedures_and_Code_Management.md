@@ -1,7 +1,7 @@
 # S2. ポリシー、手続き、コード管理 (Policies, Procedures, and Code Management)
 
 ## 管理目標
-セキュアコーディングプラクティス、徹底したコードレビュー、包括的なテストを推進するために開発ポリシーと手順が整備されていることを確認します。その目的は、脆弱性を防ぎ、スマートコントラクトコードの保守性と明確性を高めることです。
+セキュアコーディングプラクティス、徹底したコードレビュー、包括的なテストを推進するために開発ポリシーと手続きが整備されていることを確認します。その目的は、脆弱性を防ぎ、スマートコントラクトコードの保守性と明確性を高めることです。
 
 ## S2.1 開発ポリシー (Development Policies)
 
@@ -25,19 +25,19 @@
 | S2.1.B4      | コードレビューには、安全な数学ライブラリやセキュアデザインパターンの使用など、スマートコントラクト開発標準への準拠を含むことを検証します。 |    | ✓  | ✓  |     |
 | S2.1.B5      | コードレビューには一般的なスマートコントラクトの脆弱性のチェックリストを組み込んでいること、およびコードが承認される前にそのリストの各項目が対処されていることを確認します。 |    | ✓  | ✓  |     |
 
-## S2.2 コードの明瞭性 (Code Clarity)
+## S2.2 コードの明確性 (Code Clarity)
 
 ### 管理目標
-Promote code clarity and maintainability through thorough documentation, logical structure, and adherence to consistent coding standards, enabling easier understanding and modification by developers.
+徹底した文書化、論理的な構造、一貫したコーディング標準の準拠を通じてコードの明確性と保守性を促進し、開発者の理解と修正を容易にします。
 
 ### S2.2.A 可読性と文書化 (Readability and Documentation)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S2.2.A1      | Ensure that all smart contract functions and critical code blocks are documented with clear comments that explain their purpose and logic. |    | ✓  | ✓  |     |
-| S2.2.A2      | Verify that the structure of the smart contract is logical and organized to facilitate understanding and modification by other developers. |    | ✓  | ✓  |     |
-| S2.2.A3      | Check that the smart contract documentation includes a high-level overview of its functionality, usage instructions, and any dependencies on other contracts or systems. |    | ✓  | ✓  |     |
-| S2.2.A4      | Ensure that smart contract code follows consistent naming conventions for variables, functions, and contract names to improve readability and maintainability. |    | ✓  | ✓  |     |
+| S2.2.A1      | スマートコントラクトのすべての機能と重要なコードブロックが、その目的とロジックを説明する明確なコメントとともに文書化されていることを確認します。 |    | ✓  | ✓  |     |
+| S2.2.A2      | スマートコントラクトの構造が論理的で、他の開発者が理解しやすく修正しやすいように整理されていることを検証します。 |    | ✓  | ✓  |     |
+| S2.2.A3      | スマートコントラクトのドキュメントには、その機能の高レベルの概要、使用方法、他のコントラクトやシステムとの依存関係を含むことをチェックします。 |    | ✓  | ✓  |     |
+| S2.2.A4      | スマートコントラクトのコードが、変数、関数、コントラクト名の一貫した命名規則に従っていて、可読性と保守性を向上していることを確認します。 |    | ✓  | ✓  |     |
 
 ### S2.2.B コードリンティングとフォーマッティングツール (Code Linting and Formatting Tools)
 
