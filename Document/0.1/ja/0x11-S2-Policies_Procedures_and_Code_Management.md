@@ -1,19 +1,19 @@
 # S2. ポリシー、手続き、コード管理 (Policies, Procedures, and Code Management)
 
 ## 管理目標
-Ensure that development policies and procedures are in place to promote secure coding practices, thorough code reviews, and comprehensive testing. The aim is to prevent vulnerabilities and enhance the maintainability and clarity of smart contract code.
+セキュアコーディングプラクティス、徹底したコードレビュー、包括的なテストを推進するために開発ポリシーと手順が整備されていることを確認します。その目的は、脆弱性を防ぎ、スマートコントラクトコードの保守性と明確性を高めることです。
 
 ## S2.1 開発ポリシー (Development Policies)
 
 ### 管理目標
-Establish and enforce secure coding standards and review processes to minimize vulnerabilities and ensure best practices are followed throughout the development lifecycle.
+セキュアコーディング標準とレビュープロセスを確立して実施し、脆弱性を最小限に抑え、開発ライフサイクル全体を通じてベストプラクティスが遵守されるようにします。
 
 ### S2.1.A セキュアコーディング標準 (Secure Coding Standards)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S2.1.A1      | Ensure that developers do not use outdated compiler versions and adhere to the latest compiler recommendations. |    | ✓  | ✓  |     |
-| S2.1.A2      | Verify that deprecated functions are not used in the code.                 |    | ✓  | ✓  |     |
+| S2.1.A1      | 開発者が古いバージョンのコンパイラを使用しておらず、最新のコンパイラ推奨に準拠していることを確認します。 |    | ✓  | ✓  |     |
+| S2.1.A2      | コード内で非推奨関数が使用されていないことを検証します。                    |    | ✓  | ✓  |     |
 
 ### S2.1.B コードレビュープロセス (Code Review Processes)
 
