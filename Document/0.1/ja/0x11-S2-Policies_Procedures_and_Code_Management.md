@@ -65,11 +65,11 @@
 | S2.3.A4      | テストカバレッジツールを使用して、スマートコントラクトのコードカバレッジを監視し、高い割合で達成していることを検証します。 |    | ✓  | ✓  |     |
 | S2.3.A5      | テストフレームワークが外部依存関係のモックとシミュレーションをサポートし、スマートコントラクトの特定の機能を効果的に分離してテストしていることを確認します。 |    | ✓  | ✓  |     |
 
-### S2.3.B セキュリティ特化テスト (Security-Specific Tests)
+### S2.3.B セキュリティ固有のテスト (Security-Specific Tests)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S2.3.B1      | Verify that the test suite for the smart contract includes security-specific tests designed to identify vulnerabilities such as reentrancy, integer overflows, and improper access controls. |    | ✓  | ✓  |     |
-| S2.3.B2      | Ensure that the security tests validate proper implementation of access controls and permissions within the smart contract. |    | ✓  | ✓  |     |
-| S2.3.B3      | Check that fuzz testing is conducted to uncover unexpected behaviors and potential security issues under various input scenarios. |    | ✓  | ✓  |     |
-| S2.3.B4      | Verify that the smart contract's response to invalid inputs and edge cases is thoroughly tested to ensure robust security measures are in place. |    | ✓  | ✓  |     |
+| S2.3.B1      | スマートコントラクトのテストスイートには、再入可能性、整数オーバーフロー、不適切なアクセス制御などの脆弱性を特定するために設計されたセキュリティ固有のテストを含むことを検証します。 |    | ✓  | ✓  |     |
+| S2.3.B2      | セキュリティテストがスマートコントラクト内のアクセス制御とパーミッションの適切な実装を検証していることを確認します。 |    | ✓  | ✓  |     |
+| S2.3.B3      | さまざまな入力シナリオのもとでの予期しない動作や潜在的なセキュリティ問題を発見するためにファズテストが実行されていることをチェックします。 |    | ✓  | ✓  |     |
+| S2.3.B4      | 無効な入力やエッジケースに対応するスマートコントラクトのレスポンスが徹底的にテストされ、堅牢なセキュリティ対策が講じられていることを検証します。 |    | ✓  | ✓  |     |
