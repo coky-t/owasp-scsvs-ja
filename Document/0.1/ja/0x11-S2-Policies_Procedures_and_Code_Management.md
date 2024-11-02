@@ -53,17 +53,17 @@
 ## S2.3 テストカバレッジ (Test Coverage)
 
 ### 管理目標
-Ensure comprehensive test coverage for smart contracts, encompassing unit tests, integration tests, and security-specific tests, to identify vulnerabilities and maintain code quality throughout development.
+単体テスト、統合テスト、セキュリティ固有のテストを含むスマートコントラクトの包括的なテストカバレッジを確保し、脆弱性を特定して、開発全体を通じてコード品質を維持します。
 
 ### S2.3.A 単体テスト、統合テスト、自動テスト (Unit Tests, Integration Tests, Automated Testing)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S2.3.A1      | Verify that all critical functions in the smart contract have comprehensive unit tests that cover both typical and edge cases. |    | ✓  | ✓  |     |
-| S2.3.A2      | Ensure that integration tests are implemented to validate the interactions between the smart contract and other contracts or external systems. |    | ✓  | ✓  |     |
-| S2.3.A3      | Check that automated tests are set up to run on each code commit to detect regressions and maintain continuous quality of the smart contract. |    | ✓  | ✓  |     |
-| S2.3.A4      | Verify that test coverage tools are used to monitor and achieve a high percentage of coverage for the smart contract code. |    | ✓  | ✓  |     |
-| S2.3.A5      | Ensure that the testing framework supports mocking and simulating external dependencies to effectively isolate and test specific functionalities of the smart contract. |    | ✓  | ✓  |     |
+| S2.3.A1      | スマートコントラクトのすべての重要な関数が、典型的なケースとエッジケースの両方をカバーする包括的な単体テストを持つことを検証します。 |    | ✓  | ✓  |     |
+| S2.3.A2      | スマートコントラクトと他のコントラクトや外部システムとの間のインタラクションを検証するための統合テストが実装されていることを確認します。 |    | ✓  | ✓  |     |
+| S2.3.A3      | 自動テストが各コードコミットで実行されるようにセットアップされており、レグレッションを検出し、スマートコントラクトの継続的な品質を維持していることをチェックします。 |    | ✓  | ✓  |     |
+| S2.3.A4      | テストカバレッジツールを使用して、スマートコントラクトのコードカバレッジを監視し、高い割合で達成していることを検証します。 |    | ✓  | ✓  |     |
+| S2.3.A5      | テストフレームワークが外部依存関係のモックとシミュレーションをサポートし、スマートコントラクトの特定の機能を効果的に分離してテストしていることを確認します。 |    | ✓  | ✓  |     |
 
 ### S2.3.B セキュリティ特化テスト (Security-Specific Tests)
 
