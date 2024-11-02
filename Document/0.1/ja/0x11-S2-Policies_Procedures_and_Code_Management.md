@@ -43,11 +43,11 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S2.2.B1      | Ensure that a code linting tool specific to smart contracts is integrated into the development workflow to enforce coding standards and style guidelines. |    | ✓  | ✓  |     |
-| S2.2.B2      | Verify that all smart contract code passes linting checks without errors or warnings before being committed to the repository. |    | ✓  | ✓  |     |
-| S2.2.B3      | Check that code formatting tools are applied to maintain consistent indentation, spacing, and line breaks in smart contract code. |    | ✓  | ✓  |     |
-| S2.2.B4      | Ensure that the linting and formatting configurations are reviewed and updated regularly to reflect new best practices and emerging issues in smart contract development. |    | ✓  | ✓  |     |
-| S2.2.B5      | Verify that the linting and formatting tools are compatible with the development environment and do not introduce unintended changes to the smart contract code. |    | ✓  | ✓  |     |
+| S2.2.B1      | スマートコントラクト専用のコードリンティングツールが開発ワークフローに統合され、コーディング標準とスタイルガイドラインを適用していることを確認します。 |    | ✓  | ✓  |     |
+| S2.2.B2      | すべてのスマートコントラクトコードが、リポジトリにコミットされる前に、エラーや警告なしでリンティングチェックに合格することを検証します。 |    | ✓  | ✓  |     |
+| S2.2.B3      | スマートコントラクトコードにおいて、一貫したインデント、スペース、改行を維持するために、コードフォーマッティングツールが適用されていることをチェックします。 |    | ✓  | ✓  |     |
+| S2.2.B4      | リンティングとフォーマッティングの設定が定期的にレビューされて更新され、スマートコントラクト開発における新しいベストプラクティスや新たな問題を反映していることを確認します。 |    | ✓  | ✓  |     |
+| S2.2.B5      | リンティングツールとフォーマッティングツールが開発環境と互換性があり、スマートコントラクトコードに意図しない変更を加えないことを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S2.3 テストカバレッジ (Test Coverage)
