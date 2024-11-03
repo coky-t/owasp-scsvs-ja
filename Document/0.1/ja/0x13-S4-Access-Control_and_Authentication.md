@@ -1,20 +1,20 @@
 # S4. アクセス制御と認証 (Access Control and Authentication)
 
 ## 管理目標
-Establish robust access control and authentication mechanisms to ensure that only authorized entities can perform sensitive operations within the smart contract. This includes implementing role-based access control (RBAC), secure authorization mechanisms, and decentralized identity management.
+堅牢なアクセス制御と認証メカニズムを確立し、認可されたエンティティのみがスマートコントラクト内での機密性の高い操作を実行できるようにします。これには、ロールベースのアクセス制御 (RBAC)、安全な認可メカニズム、分散型アイデンティティ管理の実装を含みます。
 
 ## S4.1 ロールベースのアクセス制御 (RBAC) (Role-Based Access Control (RBAC))
 
 ### 管理目標
-Implement role-based access control to manage permissions and ensure that only authorized users can access specific functions. This includes validating identities, applying the least privilege principle, and ensuring appropriate access controls are in place.
+ロールベースのアクセス制御を実装してパーミッションを管理し、認可されたユーザーのみが特定の機能にアクセスできるようにします。これには、アイデンティティの検証、最小権限の原則の適用、適切なアクセス制御の実施の確保などを含みます。
 
 ### S4.1.A マルチ署名スキーム (Multi-Signature Schemes)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.1.A1      | Ensure that the visibility modifier for all functions is appropriate, preventing unnecessary exposure of internal functions. |    | ✓  | ✓  |     |
+| S4.1.A1      | すべての関数の visibility 修飾子が適切であり、内部関数の不必要な公開を防いでいることを確認します。 |    | ✓  | ✓  |     |
 
-### S4.1.B 身元検証 (Identity Verification)
+### S4.1.B アイデンティティ検証 (Identity Verification)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
