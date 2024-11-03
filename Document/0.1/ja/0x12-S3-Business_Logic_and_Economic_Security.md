@@ -22,17 +22,17 @@
 ## S3.2 トークノミクス (Tokenomics)
 
 ### 管理目標
-Ensure that tokens used within the smart contract ecosystem are securely implemented, including aspects such as value management, rebasing mechanisms, and reward systems. Contracts should prevent token vulnerabilities like double-spending, incorrect rewards, and improper fee handling.
+スマートコントラクトエコシステム内で使用されるトークンが、価値管理、リベースメカニズム、報酬システムなどの側面を含めて安全に実装されていることを確認します。コントラクトは、二重支出、不正報酬、不適切な手数料処理などのトークンの脆弱性を防ぐ必要があります。
 
 ### S3.2.A トークンの経済的セキュリティとそのユースケース (Economic Security of Tokens and Their Use Cases)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S3.2.A1      | Ensure that Merkle trees do not contain duplicate proofs, as this can lead to vulnerabilities like double-spending. |    | ✓  | ✓  |     |
-| S3.2.A2      | Verify that DeFi protocols account for tokens with negative rebase mechanisms, ensuring that value changes and potential miscalculations are properly handled and mitigated. |    | ✓  | ✓  |     |
-| S3.2.A3      | Verify that reward claims are correctly implemented to ensure users receive their correct rewards. |    | ✓  | ✓  |     |
-| S3.2.A4      | Verify that tokens do not have vulnerabilities such as incorrect fee application or unexpected behavior due to token transfer issues. |    | ✓  | ✓  |     |
-| S3.2.A5      | Verify that all claimable addresses are included in the hashing process for Merkle tree leaves to prevent attackers from claiming funds they should not. |    | ✓  | ✓  |     |
+| S3.2.A1      | 二重支払いなどの脆弱性につながる可能性があるため、Merkle ツリーには重複した証明を含まないことを確認します。 |    | ✓  | ✓  |     |
+| S3.2.A2      | DeFi プロトコルがネガティブリベースメカニズムを備えたトークンを考慮していることを検証し、価値の変化と潜在的な計算ミスが適切に処理され、軽減されることを確認します。 |    | ✓  | ✓  |     |
+| S3.2.A3      | ユーザーが正しい報酬を受け取れるように、報酬請求が正しく実装されていることを検証します。 |    | ✓  | ✓  |     |
+| S3.2.A4      | トークンには、トークン転送の問題による、不正な手数料の適用や予期せぬ動作などの脆弱性がないことを検証します。 |    | ✓  | ✓  |     |
+| S3.2.A5      | 請求可能なすべてのアドレスには Merkle ツリーのリーフのハッシュ化プロセスに含まれており、攻撃者が資金を不正に請求することを防いでいることを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S3.3 再入可能性とロジックの欠陥の防止 (Preventing Reentrancy and Logic Flaws)
