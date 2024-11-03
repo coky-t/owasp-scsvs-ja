@@ -71,8 +71,8 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.3.B1      | Verify that the smart contract manages verifiable credentials in a way that ensures their authenticity and integrity through cryptographic proofs. |    | ✓  | ✓  |     |
-| S4.3.B2      | Ensure that the issuance process of verifiable credentials by the smart contract includes proper identity verification and validation procedures. |    | ✓  | ✓  |     |
-| S4.3.B3      | Check that the smart contract supports cryptographic proofs to verify the validity of credentials without disclosing sensitive information. |    | ✓  | ✓  |     |
-| S4.3.B4      | Verify that the smart contract includes a secure process for revoking verifiable credentials when necessary. |    | ✓  | ✓  |     |
-| S4.3.B5      | Ensure that the smart contract’s handling of verifiable credentials complies with relevant standards and best practices for secure credential management. |    | ✓  | ✓  |     |
+| S4.3.B1      | スマートコントラクトが、暗号化証明を通じてその真正性と完全性を確保する方法で、検証可能なクレデンシャルを管理していることを検証します。 |    | ✓  | ✓  |     |
+| S4.3.B2      | スマートコントラクトによる検証可能なクレデンシャルの発行プロセスに、適切なアイデンティティ検証およびバリデーション手順を含むことを確認します。 |    | ✓  | ✓  |     |
+| S4.3.B3      | スマートコントラクトが暗号化証明をサポートし、機密情報を開示せずにクレデンシャルの有効性を検証していることをチェックします。 |    | ✓  | ✓  |     |
+| S4.3.B4      | スマートコントラクトには、必要に応じて検証可能なクレデンシャルを取り消すための安全なプロセスを含むことを検証します。 |    | ✓  | ✓  |     |
+| S4.3.B5      | スマートコントラクトによる検証可能なクレデンシャルの取り扱いが、安全なクレデンシャル管理に関する関連標準およびベストプラクティスに準拠していることを確認します。 |    | ✓  | ✓  |     |
