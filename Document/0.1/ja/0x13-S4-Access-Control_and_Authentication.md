@@ -25,10 +25,10 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.1.C1      | Use msg.sender instead of tx.origin for authorization to avoid potential abuse from malicious contracts; include checks like require(tx.origin == msg.sender) to ensure the sender is an EOA. |    | ✓  | ✓  |     |
-| S4.1.C2      | Certain addresses might be blocked or restricted from receiving tokens (e.g., LUSD). Ensure that address restrictions are properly managed and verified. |    | ✓  | ✓  |     |
-| S4.1.C3      | Ensure that Guard’s hooks (e.g., checkTransaction(), checkAfterExecution()) are executed to enforce critical security checks. |    | ✓  | ✓  |     |
-| S4.1.C4      | Ensure that access controls are implemented correctly to determine who can use certain functions, and avoid unauthorized changes or withdrawals. |    | ✓  | ✓  |     |
+| S4.1.C1      | 認可には tx.origin ではなく msg.sender を使用して、悪意のあるコントラクトによる潜在的な悪用を回避します。require(tx.origin == msg.sender) などのチェックを含めて、送信者が EOA であることを確認します。 |    | ✓  | ✓  |     |
+| S4.1.C2      | 特定のアドレスがトークンの受信をブロックまたは制限している可能性があります (LUSD など)。アドレス制限が適切に管理され、検証されていることを確認します。 |    | ✓  | ✓  |     |
+| S4.1.C3      | Guard のフック (checkTransaction(), checkAfterExecution() など) が実行され、重要なセキュリティチェックを実施することを確認します。 |    | ✓  | ✓  |     |
+| S4.1.C4      | アクセス制御が正しく実行され、誰が特定の機能を使用できるかを決定し、認可されていない変更や引き出しを避けていることを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S4.2 認可メカニズム (Authorization Mechanisms)
