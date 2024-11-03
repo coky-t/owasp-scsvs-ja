@@ -55,17 +55,17 @@
 ## S4.3 分散型アイデンティティ (Decentralized Identity)
 
 ### 管理目標
-Implement decentralized identity solutions to ensure secure and reliable identity verification and management while maintaining user privacy.
+分散型アイデンティティソリューションを導入し、ユーザーのプライバシーを維持しながら、安全で信頼性の高いアイデンティティ検証と管理を実現します。
 
 ### S4.3.A 分散識別子 (DID) (Decentralized Identifiers (DIDs))
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.3.A1      | Verify that the smart contract for handling DIDs adheres to the latest standards and best practices for decentralized identity management. |    | ✓  | ✓  |     |
-| S4.3.A2      | Ensure that the DID management contract includes mechanisms to prevent unauthorized modifications and ensure the integrity of DID records. |    | ✓  | ✓  |     |
-| S4.3.A3      | Check that DID documents managed by the smart contract are securely stored and can be retrieved in a decentralized manner. |    | ✓  | ✓  |     |
-| S4.3.A4      | Verify that the smart contract supports reliable DID resolution and includes mechanisms for handling conflicts and updates. |    | ✓  | ✓  |     |
-| S4.3.A5      | Ensure that the smart contract maintains the privacy and confidentiality of DID-related information throughout its lifecycle. |    | ✓  | ✓  |     |
+| S4.3.A1      | DID を処理するためのスマートコントラクトが、分散型アイデンティティ管理の最新の標準とベストプラクティスに準拠していることを検証します。 |    | ✓  | ✓  |     |
+| S4.3.A2      | DID 管理コントラクトには、認可されていない変更を防ぎ、DID レコードの完全性を確保するためのメカニズムを含むことを確認します。 |    | ✓  | ✓  |     |
+| S4.3.A3      | スマートコントラクトによって管理される DID ドキュメントが安全に保存され、分散化された方法で検索できることをチェックします。 |    | ✓  | ✓  |     |
+| S4.3.A4      | スマートコントラクトが信頼性の高い DID 解決をサポートし、競合と更新を処理するメカニズムを含むことを検証します。 |    | ✓  | ✓  |     |
+| S4.3.A5      | スマートコントラクトがそのライフサイクル全体を通じて DID 関連情報のプライバシーと機密性を維持していることを確認します。 |    | ✓  | ✓  |     |
 
 ### S4.3.B 検証可能なクレデンシャル (Verifiable Credentials)
 
