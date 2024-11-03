@@ -28,20 +28,20 @@
 | S4.1.C1      | 認可には tx.origin ではなく msg.sender を使用して、悪意のあるコントラクトによる潜在的な悪用を回避します。require(tx.origin == msg.sender) などのチェックを含めて、送信者が EOA であることを確認します。 |    | ✓  | ✓  |     |
 | S4.1.C2      | 特定のアドレスがトークンの受信をブロックまたは制限している可能性があります (LUSD など)。アドレス制限が適切に管理され、検証されていることを確認します。 |    | ✓  | ✓  |     |
 | S4.1.C3      | Guard のフック (checkTransaction(), checkAfterExecution() など) が実行され、重要なセキュリティチェックを実施することを確認します。 |    | ✓  | ✓  |     |
-| S4.1.C4      | アクセス制御が正しく実行され、誰が特定の機能を使用できるかを決定し、認可されていない変更や引き出しを避けていることを確認します。 |    | ✓  | ✓  |     |
+| S4.1.C4      | アクセス制御が正しく実行され、誰が特定の機能を使用できるかを決定し、認可されていない変更や引き出しを回避していることを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S4.2 認可メカニズム (Authorization Mechanisms)
 
 ### 管理目標
-Implement secure authorization mechanisms to safeguard critical functions and sensitive operations, ensuring only authorized entities can perform these actions.
+安全な認可メカニズムを実装して、重要な機能や機密性の高い操作を保護し、認可されたエンティティのみがこれらのアクションを実行できるようにします。
 
 ### S4.2.A 重要な機能への安全なアクセス (Secure Access to Critical Functions)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.2.A1      | Verify that the contract uses msg.sender for authorization instead of tx.origin to avoid vulnerabilities related to contracts that forward calls from legitimate users. |    | ✓  | ✓  |     |
-| S4.2.A2      | Implement and verify appropriate access controls for functions that modify contract state or perform sensitive operations to prevent unauthorized access. |    | ✓  | ✓  |     |
+| S4.2.A1      | コントラクトは認可に tx.origin ではなく msg.sender を使用して、正当なユーザーからの呼び出しを転送するコントラクトに関連する脆弱性を回避していることを検証します。 |    | ✓  | ✓  |     |
+| S4.2.A2      | コントラクト状態を変更したり、機密性の高い操作を実行する機能に対して適切なアクセス制御を実装して検証し、認可されていないアクセスを防いでいる。 |    | ✓  | ✓  |     |
 
 ### S4.2.B 期限付きパーミッション (Timed Permissions)
 
