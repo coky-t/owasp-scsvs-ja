@@ -47,9 +47,9 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.2.B1      | Ensure that msg.sender validation is properly implemented when using Merkle trees to maintain security and prevent unauthorized access. |    | ✓  | ✓  |     |
-| S4.2.B2      | Use whitelisting to restrict interactions to a specific set of addresses, providing additional security against malicious actors. |    | ✓  | ✓  |     |
-| S4.2.B3      | Ensure that functions modifying the contract state or accessing sensitive operations have proper access controls implemented. |    | ✓  | ✓  |     |
+| S4.2.B1      | Merkle ツリーを使用する場合、msg.sender バリデーションが適切に実装され、セキュリティを維持し、認可されていないアクセスを防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S4.2.B2      | ホワイトリストを使用して、特定のアドレスセットへのインタラクションを制限し、悪意のあるアクターに対するセキュリティを強化します。 |    | ✓  | ✓  |     |
+| S4.2.B3      | コントラクト状態を変更したり、機密性の高い操作にアクセスする関数に、適切なアクセス制御が実装されていることを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S4.3 分散型アイデンティティ (Decentralized Identity)
