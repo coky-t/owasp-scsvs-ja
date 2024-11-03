@@ -1,22 +1,22 @@
 # S3. ビジネスロジックと経済のセキュリティ (Business Logic and Economic Security)
 
 ## 管理目標
-Ensure that the smart contract's business logic and economic security are resilient against threats related to incentive structures, tokenomics, and logic vulnerabilities. Contracts should prevent abuse, misbehavior, or unexpected behaviors by implementing secure economic models, token handling, and transaction integrity.
+スマートコントラクトのビジネスロジックと経済のセキュリティが、インセンティブ構造、トークノミクス、ロジックの脆弱性に関連する脅威に対して耐性があることを確認します。コントラクトは、安全な経済モデル、トークン処理、トランザクションの完全性を実装することで、不正使用、誤動作、予期しない動作を防ぐ必要があります。
 
 
 ## S3.1 経済モデル (Economic Models)
 
 ### 管理目標
-Ensure that economic models, including incentive structures and tokenomics, are designed and implemented in a way that secures value and incentivizes proper behavior within the ecosystem. Contracts should handle fluctuating token values and avoid creating opportunities for exploitation.
+インセンティブ構造やトークノミクスを含む経済モデルが、エコシステム内で価値を確保し、適切な行動にインセンティブを与えるように設計され、実装されていることを確認します。コントラクトはトークン価値の変動に対応し、悪用の機会を作らないようにする必要があります。
 
 ### S3.1.A インセンティブ構造 (Incentive Structures)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S3.1.A1      | Ensure that the withdrawal process implements a pull-based approach rather than a push-based one to track accounting and allow users to pull payments. | ✓  | ✓  | ✓  |     |
-| S3.1.A2      | The rate of cbETH to ETH can decrease, impacting users who hold or interact with cbETH. Ensure mechanisms are in place to handle fluctuations in conversion rates. |    | ✓  | ✓  |     |
-| S3.1.A3      | Validators on the Ethereum 2.0 Beacon Chain can be penalized or slashed for misbehavior, which can affect the value of rETH. Ensure that these dynamics are considered in value assessments and interactions. |    | ✓  | ✓  |     |
-| S3.1.A4      | The conversion rate between ETH and rETH might change over time based on the rewards accrued from staking. Ensure that these fluctuations are properly managed and captured. |    | ✓  | ✓  |     |
+| S3.1.A1      | 会計を追跡し、ユーザーが支払いを引き出せるように、払い戻しプロセスがプッシュベースではなくプルベースのアプローチを導入していることを確認します。 | ✓  | ✓  | ✓  |     |
+| S3.1.A2      | cbETH から ETH へのレートが低下する可能性があり、cbETH を保有またはやり取りするユーザーに影響を及ぼします。変換レートの変動に対応するためのメカニズムがあることを確認します。 |    | ✓  | ✓  |     |
+| S3.1.A3      | Ethereum 2.0 Beacon Chain のバリデータは、不正行為によってペナルティを受けたり削減される可能性があり、rETH の価値に影響を及ぼす可能性があります。価値評価ややり取りにおいて、これらのダイナミクスが考慮されていることを確認します。 |    | ✓  | ✓  |     |
+| S3.1.A4      | ETH と rETH との間の変換レートはステーキングから得られる報酬に基づいて時間の経過とともに変化する可能性があります。これらの変動が適切に管理され、捕捉されていることを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S3.2 トークノミクス (Tokenomics)
