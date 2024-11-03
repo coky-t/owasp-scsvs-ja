@@ -31,24 +31,24 @@
 | S3.2.A1      | 二重支払いなどの脆弱性につながる可能性があるため、Merkle ツリーには重複した証明を含まないことを確認します。 |    | ✓  | ✓  |     |
 | S3.2.A2      | DeFi プロトコルがネガティブリベースメカニズムを備えたトークンを考慮していることを検証し、価値の変化と潜在的な計算ミスが適切に処理され、軽減されることを確認します。 |    | ✓  | ✓  |     |
 | S3.2.A3      | ユーザーが正しい報酬を受け取れるように、報酬請求が正しく実装されていることを検証します。 |    | ✓  | ✓  |     |
-| S3.2.A4      | トークンには、トークン転送の問題による、不正な手数料の適用や予期せぬ動作などの脆弱性がないことを検証します。 |    | ✓  | ✓  |     |
+| S3.2.A4      | トークンには、トークン転送の問題による、不正な手数料の適用や予期しない動作などの脆弱性がないことを検証します。 |    | ✓  | ✓  |     |
 | S3.2.A5      | 請求可能なすべてのアドレスには Merkle ツリーのリーフのハッシュ化プロセスに含まれており、攻撃者が資金を不正に請求することを防いでいることを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S3.3 再入可能性とロジックの欠陥の防止 (Preventing Reentrancy and Logic Flaws)
 
 ### 管理目標
-Ensure the smart contract's transaction flow and logic integrity are protected from reentrancy attacks and logic flaws. Contracts should implement robust control structures and security patterns to prevent reentrancy, handle complex flows, and ensure that state transitions are secure and symmetrical.
+スマートコントラクトのトランザクションフローとロジックの完全性が再入攻撃やロジックの欠陥から保護されていることを確認します。コントラクトは堅牢な制御構造とセキュリティパターンを実装して、再入可能性を防ぎ、複雑なフローを処理し、状態遷移が安全かつ対照的であることを確保する必要があります。
 
 ### S3.3.A トランザクションフローのセキュリティ (Transaction Flow Security)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S3.3.A1      | Check for edge cases in loop control structures to prevent unexpected behaviors due to break or continue statements. |    | ✓  | ✓  |     |
-| S3.3.A2      | Ensure that scenarios where sender and recipient are the same are considered to prevent unintended issues in smart contracts. |    | ✓  | ✓  |     |
-| S3.3.A3      | Ensure that the `NonReentrant` modifier is applied before other modifiers in functions to prevent reentrancy attacks. |    | ✓  | ✓  |     |
-| S3.3.A4      | Verify that the check-effect-interaction pattern is implemented to prevent reentrancy attacks. |    | ✓  | ✓  |     |
-| S3.3.A5      | Ensure that function calls with arbitrary user input and low-level calls are handled securely to avoid introducing risks. |    | ✓  | ✓  |     |
+| S3.3.A1      | ループ制御構造のエッジケースをチェックして、break 文や continue 文による予期しない動作を防ぎます。 |    | ✓  | ✓  |     |
+| S3.3.A2      | 送信者と受信者が同じであるシナリオを考慮して、スマートコントラクトでの意図しない問題を防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S3.3.A3      | 関数内で `NonReentrant` 修飾子が他の修飾子より前に適用され、再入攻撃を防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S3.3.A4      | check-effect-interaction パターンが実装され、再入攻撃を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S3.3.A5      | 任意のユーザー入力と低レベルの呼び出しによる関数呼び出しが安全に処理され、リスクの発生を回避していることを確認します。 |    | ✓  | ✓  |     |
 
 ### S3.3.B 機能の完全性 (Function Integrity)
 
