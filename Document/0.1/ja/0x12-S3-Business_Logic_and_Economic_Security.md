@@ -54,5 +54,5 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S3.3.B1      | Ensure that functions intended to be unique per parameter set are not callable multiple times to prevent potential issues. |    | ✓  | ✓  |     |
-| S3.3.B2      | Verify that state changes in functions, such as withdraw and deposit, are symmetrically handled to avoid undesired behavior due to inconsistencies. |    | ✓  | ✓  |     |
+| S3.3.B1      | パラメータセットごとに一意であることを意図した関数が複数回呼び出されず、潜在的な問題を防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S3.3.B2      | 払い戻しや預け入れなどの関数の状態変化が対称的に処理され、一貫性がないことによる望ましくない動作を回避していることを検証します。 |    | ✓  | ✓  |     |
