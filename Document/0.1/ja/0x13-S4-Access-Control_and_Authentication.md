@@ -18,8 +18,8 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S4.1.B1      | Validate that unexpected addresses do not result in unintended behaviors, particularly when these addresses refer to contracts within the same protocol. |    | ✓  | ✓  |     |
-| S4.1.B2      | Verify that functions like ecrecover handle all potential null addresses properly to avoid vulnerabilities arising from unexpected ecrecover outputs. |    | ✓  | ✓  |     |
+| S4.1.B1      | 予期しないアドレスが、特にこれらのアドレスが同じプロトコル内のコントラクトを参照している場合に、意図しない動作を引き起こさないことを検証します。 |    | ✓  | ✓  |     |
+| S4.1.B2      | ecrecover などの関数がすべての潜在的な null アドレスを適切に処理し、予期しない ecrecover 出力から生じる脆弱性を避けていることを検証します。 |    | ✓  | ✓  |     |
 
 ### S4.1.C 最小権限の原則 (Least Privilege Principle)
 
