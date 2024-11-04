@@ -4,7 +4,7 @@
 - [S2. ポリシー、手続き、コード管理 (Policies, Procedures, and Code Management)](0x11-S2-Policies_Procedures_and_Code_Management.md)
 - [S3. ビジネスロジックと経済のセキュリティ (Business Logic and Economic Security)](0x12-S3-Business_Logic_and_Economic_Security.md)
 - [S4. アクセス制御と認証 (Access Control and Authentication)](0x13-S4-Access-Control_and_Authentication.md)
-- [S5. 安全な相互作用と通信 (Secure Interactions and Communications)](0x14-S5-Secure-Interactions_and_Communications.md)
+- [S5. 安全なインタラクションと通信 (Secure Interactions and Communications)](0x14-S5-Secure-Interactions_and_Communications.md)
 - [S6. 暗号化の実践 (Cryptographic Practices)](0x15-S6-Cryptographic-Practices.md)
 - [S7. 演算とロジックのセキュリティ (Arithmetic and Logic Security)](0x16-S7-Arithmetic_and_Logic-Security.md)
 - [S8. サービス拒否 (Denial of Service (DoS))](0x17-S8-Denial-of-Service-DoS.md)

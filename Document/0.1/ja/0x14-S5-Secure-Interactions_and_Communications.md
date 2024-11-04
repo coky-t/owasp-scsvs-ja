@@ -1,7 +1,7 @@
-# S5. 安全な相互作用と通信 (Secure Interactions and Communications)
+# S5. 安全なインタラクションと通信 (Secure Interactions and Communications)
 
 ## 管理目標
-Establish secure interaction protocols for smart contracts to ensure safe communication between contracts, external oracles, and cross-chain integrations. This includes managing contract interactions, securing oracle integrations, handling cross-chain interactions, and ensuring the security of bridges.
+スマートコントラクトの安全なインタラクションプロトコルを確立し、コントラクト、外部オラクル、クロスチェーン統合間の安全な通信を確保します。これには、コントラクトインタラクションの管理、オラクル統合の保護、クロスチェーンインタラクションの処理、ブリッジのセキュリティの確保を含みます。
 
 
 ## S5.1 コントラクトインタラクション (Contract Interactions)
@@ -56,7 +56,7 @@ Ensure that oracle integrations provide secure, reliable, and tamper-proof data 
 | S5.2.B5      | Ensure that the decentralized oracle integration adheres to standards for security and reliability in multi-oracle environments. |    | ✓  | ✓  |     |
 
 
-## S5.3 クロスチェーンインタラクション
+## S5.3 クロスチェーンインタラクション (Cross-Chain Interactions)
 
 ### 管理目標
 Ensure secure handling of external calls and atomic swaps during cross-chain interactions to maintain operational reliability and prevent fraud.
