@@ -7,17 +7,17 @@
 ## S5.1 コントラクトインタラクション (Contract Interactions)
 
 ### 管理目標
-Ensure that all interactions between contracts are secure, minimizing risks associated with external calls, maintaining a minimal trusted surface, and handling errors appropriately.
+コントラクト間のすべてのインタラクションが安全であり、外部呼び出しに関連するリスクを最小限に抑え、信頼できる領域を最小限に維持し、エラーを適切に処理することを確認します。
 
 ### S5.1.A 安全なメッセージパッシング (Secure Message Passing)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S5.1.A1      | Ensure that calls to inherited functions from LzApp use recommended approaches (e.g., _lzSend) to avoid vulnerabilities associated with direct calls to lzEndpoint.send. |    | ✓  | ✓  |     |
-| S5.1.A2      | Ensure that when interacting with external contracts, the msg.sender remains consistent to avoid security issues related to unexpected changes in sender context. |    | ✓  | ✓  |     |
-| S5.1.A3      | Manage untrusted external contract calls to prevent unexpected results such as multiple withdrawals or out-of-order events. |    | ✓  | ✓  |     |
-| S5.1.A4      | Missing verification of interacting pools can introduce risks. Ensure that all pools are properly verified before interaction to prevent potential security issues. |    | ✓  | ✓  |     |
-| S5.1.A5      | Verify that the low-level .delegatecall() is properly managed, acknowledging that it converts the return value to a Boolean without providing the execution outcome. |    | ✓  | ✓  |     |
+| S5.1.A1      | LzApp から継承された関数への呼び出しが推奨されるアプローチ (_lzSend など) を使用し、lzEndpoint.send への直接呼び出しに関連する脆弱性を避けていることを確認します。 |    | ✓  | ✓  |     |
+| S5.1.A2      | 外部コントラクトとやり取りする際、msg.sender が一貫性を維持し、送信者コンテキストの予期しない変更に関連するセキュリティ問題を避けていることを確認します。 |    | ✓  | ✓  |     |
+| S5.1.A3      | 信頼できない外部コントラクト呼び出しを管理し、複数の引き出しや順序外のイベントなどの予期しない結果を防ぎます。 |    | ✓  | ✓  |     |
+| S5.1.A4      | インタラクションするプールの検証がないと、リスクが生じる可能性があります。インタラクション前にすべてのプールが検証され、潜在的なセキュリティ問題を防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S5.1.A5      | 低レベルの .delegatecall() が適切に管理され、実行結果を提供せずに戻り値をブール値に変換することを認識していることを検証します。 |    | ✓  | ✓  |     |
 
 ### S5.1.B 最小限の信頼できる領域 (Minimal Trusted Surface)
 
