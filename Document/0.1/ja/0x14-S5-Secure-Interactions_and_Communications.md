@@ -33,17 +33,17 @@
 ## S5.2 オラクル統合 (Oracle Integrations)
 
 ### 管理目標
-Ensure that oracle integrations provide secure, reliable, and tamper-proof data feeds while maintaining data integrity and handling failures appropriately.
+オラクル統合が、データ完全性を維持し、障害を適切に処理しながら、安全で、信頼でき、改竄防止を備えたデータフィードを提供することを確認します。
 
 ### S5.2.A 安全なデータフィード (Secure Data Feeds)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S5.2.A1      | Verify that the smart contract uses oracles that provide secure and tamper-proof data feeds, including checks for data integrity and authenticity. |    | ✓  | ✓  |     |
-| S5.2.A2      | Ensure that the smart contract validates the data received from oracles to prevent malicious or incorrect data from affecting contract operations. |    | ✓  | ✓  |     |
-| S5.2.A3      | Check that the smart contract includes fallback mechanisms in case of oracle failure or unreliable data. |    | ✓  | ✓  |     |
-| S5.2.A4      | Verify that the integration with oracles follows best practices for data security, including encryption and secure communication channels. |    | ✓  | ✓  |     |
-| S5.2.A5      | Ensure that the smart contract's oracle integration is designed to handle any potential discrepancies or conflicts in data from multiple sources. |    | ✓  | ✓  |     |
+| S5.2.A1      | スマートコントラクトが、データの完全性と真正性のチェックを含む、安全で改竄防止を備えたデータフィードを提供するオラクルを使用していることを検証します。 |    | ✓  | ✓  |     |
+| S5.2.A2      | スマートコントラクトがオラクルから受け取ったデータを検証し、悪意のあるデータや不正なデータがコントラクトの操作に影響を及ぼすことから防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S5.2.A3      | スマートコントラクトが、オラクル障害や信頼できないデータの場合に、フォールバックメカニズムを含むことをチェックします。 |    | ✓  | ✓  |     |
+| S5.2.A4      | オラクルとの統合が、暗号化や安全な通信チャネルなど、データセキュリティのベストプラクティスに従っていることを検証します。 |    | ✓  | ✓  |     |
+| S5.2.A5      | スマートコントラクトのオラクル統合が、複数のソースからのデータにおける潜在的な矛盾や競合を処理できるように設計されていることを確認します。 |    | ✓  | ✓  |     |
 
 ### S5.2.B 分散型オラクル (Decentralized Oracles)
 
