@@ -23,11 +23,11 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S5.1.B1      | Verify that the smart contract minimizes its trusted surface by only interacting with other contracts and systems through well-defined and limited interfaces. |    | ✓  | ✓  |     |
-| S5.1.B2      | Ensure that the smart contract includes checks to validate the trustworthiness and authenticity of interacting parties before executing sensitive operations. |    | ✓  | ✓  |     |
-| S5.1.B3      | Check that the smart contract's interactions are designed to avoid dependencies on external data or contracts that could compromise security. |    | ✓  | ✓  |     |
-| S5.1.B4      | Verify that the contract handles failures or unexpected behaviors from external interactions gracefully to avoid cascading failures. |    | ✓  | ✓  |     |
-| S5.1.B5      | Ensure that interactions with other contracts are monitored and audited to detect and address any unusual or unauthorized activities. |    | ✓  | ✓  |     |
+| S5.1.B1      | スマートコントラクトが、明確に定義されて制限されたインタフェースを通じて他のコントラクトやシステムとやり取りすることのみにより、信頼できる領域を最小限に抑えていることを検証します。 |    | ✓  | ✓  |     |
+| S5.1.B2      | スマートコントラクトには、機密性の高い操作を実行する前に、やり取りする当事者の信頼性と真正性を検証するチェックを含むことを確認します。 |    | ✓  | ✓  |     |
+| S5.1.B3      | スマートコントラクトのインタラクションが、セキュリティを損なう可能性がある外部データやコントラクトへの依存を避けるように設計されていることをチェックします。 |    | ✓  | ✓  |     |
+| S5.1.B4      | コントラクトが、外部とのインタラクションによる障害や予期しない動作を適切に処理して、障害が連鎖することを避けていることを検証します。 |    | ✓  | ✓  |     |
+| S5.1.B5      | 他のコントラクトとのインタラクションが監視および監査され、異常なアクティビティや認可されていないアクティビティを検出して対処していることを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S5.2 オラクル統合 (Oracle Integrations)
