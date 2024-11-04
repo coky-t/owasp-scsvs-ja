@@ -49,11 +49,11 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S5.2.B1      | Verify that the smart contract uses decentralized oracles to enhance data reliability and prevent single points of failure or manipulation. |    | ✓  | ✓  |     |
-| S5.2.B2      | Ensure that the smart contract includes mechanisms to validate the consensus or majority opinion of decentralized oracles before taking actions based on their data. |    | ✓  | ✓  |     |
-| S5.2.B3      | Check that the smart contract accounts for potential latency or delays in data from decentralized oracles to maintain operational reliability. |    | ✓  | ✓  |     |
-| S5.2.B4      | Verify that the smart contract includes checks to prevent manipulation or collusion among decentralized oracles. |    | ✓  | ✓  |     |
-| S5.2.B5      | Ensure that the decentralized oracle integration adheres to standards for security and reliability in multi-oracle environments. |    | ✓  | ✓  |     |
+| S5.2.B1      | スマートコントラクトが分散型オラクルを使用して、データの信頼性を高め、単一障害点や操作を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S5.2.B2      | スマートコントラクトが、分散型オラクルのデータに基づいてアクションを起こす前に、分散型オラクルのコンセンサスまたは多数意見を検証するメカニズムを含むことを確認します。 |    | ✓  | ✓  |     |
+| S5.2.B3      | スマートコントラクトが分散型オラクルからのデータの潜在的なレイテンシや遅延を考慮し、運用の信頼性を維持していることをチェックします。 |    | ✓  | ✓  |     |
+| S5.2.B4      | スマートコントラクトが分散型オラクル間の操作や談合を防ぐためのチェックを含むことを検証します。 |    | ✓  | ✓  |     |
+| S5.2.B5      | 分散型オラクル統合が、マルチオラクル環境におけるセキュリティと信頼性の標準に準拠していることを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S5.3 クロスチェーンインタラクション (Cross-Chain Interactions)
