@@ -59,16 +59,16 @@
 ## S5.3 クロスチェーンインタラクション (Cross-Chain Interactions)
 
 ### 管理目標
-Ensure secure handling of external calls and atomic swaps during cross-chain interactions to maintain operational reliability and prevent fraud.
+クロスチェーンインタラクションにおいて、外部呼び出しとアトミックスワップを安全に処理して、運用の信頼性を維持し、不正を防止することを確認します。
 
-### S5.3.A 外部コールの安全な処理 (Handling External Calls Securely)
+### S5.3.A 外部呼び出しの安全な処理 (Handling External Calls Securely)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S5.3.A1      | Ensure that parameters for Chainlink VRF (Verifiable Random Function) are thoroughly validated to prevent the fulfillRandomWord function from returning incorrect values instead of reverting. |    | ✓  | ✓  |     |
-| S5.3.A2      | Implement robust security checks for cross-chain messaging to ensure correct permissions and intended functionality. |    | ✓  | ✓  |     |
-| S5.3.A3      | Verify that contracts created using the CREATE opcode handle block reorganizations securely to prevent unexpected eliminations. |    | ✓  | ✓  |     |
-| S5.3.A4      | Ensure robust cross-chain messaging security checks to prevent replay attacks where signatures valid on one chain might be exploited on another. |    | ✓  | ✓  |     |
+| S5.3.A1      | Chainlink VRF (Verifiable Random Function) のパラメータが徹底的に検証され、fulfillRandomWord 関数が元に戻す代わりに不正な値を返すことを防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S5.3.A2      | クロスチェーンメッセージングに堅牢なセキュリティチェックを導入して、正しいパーミッションと意図した機能を確保します。 |    | ✓  | ✓  |     |
+| S5.3.A3      | CREATE オペコードを使用して作成されるコントラクトがブロックの再編成を安全に処理して、予期しない消去を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S5.3.A4      | 堅牢なクロスチェーンメッセージングセキュリティチェックを確保して、あるチェーンで有効な署名が別のチェーンで悪用される可能性のある、リプレイ攻撃を防いでいる。 |    | ✓  | ✓  |     |
 
 ### S5.3.B アトミックスワップ (Atomic Swaps)
 
