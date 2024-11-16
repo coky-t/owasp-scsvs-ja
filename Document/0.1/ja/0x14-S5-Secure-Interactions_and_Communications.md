@@ -74,10 +74,10 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S5.3.B1      | Verify that the smart contract supports atomic swaps with robust mechanisms to ensure that swaps are completed successfully or not executed at all. |    | ✓  | ✓  |     |
-| S5.3.B2      | Ensure that the smart contract includes checks to validate the atomic swap conditions and prevent partial or fraudulent swaps. |    | ✓  | ✓  |     |
-| S5.3.B3      | Check that the smart contract handles potential failures or disputes in atomic swaps securely and fairly. |    | ✓  | ✓  |     |
-| S5.3.B4      | Verify that the atomic swap functionality is tested thoroughly to cover various scenarios and edge cases. |    | ✓  | ✓  |     |
+| S5.3.B1      | スマートコントラクトが堅牢なメカニズムを備えたアトミックスワップをサポートして、スワップが正常に完了するか、まったく実行されないことを確保していることを検証します。 |    | ✓  | ✓  |     |
+| S5.3.B2      | スマートコントラクトには、アトミックスワップ条件を検証して、部分的なスワップや不正なスワップを防ぐためのチェックを含むことを確認します。 |    | ✓  | ✓  |     |
+| S5.3.B3      | スマートコントラクトがアトミックスワップの潜在的な障害や紛争を安全かつ公正に処理することをチェックします。 |    | ✓  | ✓  |     |
+| S5.3.B4      | アトミックスワップ機能が徹底的にテストされ、さまざまなシナリオやエッジケースをカバーしていることを検証します。 |    | ✓  | ✓  |     |
 
 ## S5.4 ブリッジ (Bridges)
 
