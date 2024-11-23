@@ -30,13 +30,13 @@
 ## S6.2 署名検証 (Signature Verification)
 
 ### 管理目標
-Implement cryptographic techniques that ensure the secure verification of signatures and compliance with standards to maintain the integrity of authenticated transactions.
+認証されたトランザクションの完全性を維持するために、署名の安全な検証と標準への準拠を確保する暗号技法を導入します。
 
 ### S6.2.A 認証のための暗号技法 (Cryptographic Techniques for Authentication)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S6.2.A1      | Ensure that cryptographic algorithms used for signature verification are secure and follow best practices. |    | ✓  | ✓  |     |
+| S6.2.A1      |署名検証に使用される暗号アルゴリズムが安全であり、ベストプラクティスに従っていることを確認します。 |    | ✓  | ✓  |     |
 
 ### S6.2.B 標準準拠 (例, EIP-712) (Standard Compliance (e.g., EIP-712))
 
