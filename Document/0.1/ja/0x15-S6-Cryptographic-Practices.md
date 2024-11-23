@@ -47,11 +47,11 @@
 ## S6.3 安全な乱数生成 (Secure Random Number Generation)
 
 ### 管理目標
-Implement best practices for secure random number generation to ensure unpredictability and resistance against manipulation.
+安全な乱数生成のためのベストプラクティスを実装して、予測不可能性と操作に対する耐性を確保します。
 
 ### S6.3.A ランダム性のベストプラクティス (Best Practices for Randomness)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S6.3.A1      | Ensure that random number generation follows best practices and uses secure sources of entropy. |    | ✓  | ✓  |     |
-| S6.3.A2      | Verify that any random number generation is resistant to manipulation and prediction. |    | ✓  | ✓  |     |
+| S6.3.A1      | 乱数生成がベストプラクティスに従い、安全なエントロピーソースを使用していることを確認します。 |    | ✓  | ✓  |     |
+| S6.3.A2      | あらゆる乱数生成が操作や予測に対して耐性があることを検証します。 |    | ✓  | ✓  |     |
