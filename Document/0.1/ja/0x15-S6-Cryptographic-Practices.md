@@ -22,9 +22,9 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S6.1.B1      | Verify that multi-signature wallets require a predefined number of signatures before executing any transaction. |    | ✓  | ✓  |     |
-| S6.1.B2      | Ensure that the multi-signature wallet logic is resistant to replay attacks. |    | ✓  | ✓  |     |
-| S6.1.B3      | Verify that the process of adding or removing signatories from the multi-signature wallet is secure and controlled. |    | ✓  | ✓  |     |
+| S6.1.B1      | マルチ署名ウォレットではトランザクションを実行する前にあらかじめ定義された数の署名が必要であることを検証します。 |    | ✓  | ✓  |     |
+| S6.1.B2      | マルチ署名ウォレットロジックがリプレイ攻撃に耐性があることを確認します。    |    | ✓  | ✓  |     |
+| S6.1.B3      | マルチ署名ウォレットへの署名者の追加または削除するプロセスが安全かつ制御されていることを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S6.2 署名検証 (Signature Verification)
