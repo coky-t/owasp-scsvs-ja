@@ -1,22 +1,22 @@
 # S6. 暗号化の実践 (Cryptographic Practices)
 
 ## 管理目標
-Establish secure cryptographic practices for managing keys, verifying signatures, and generating random numbers to protect the integrity and authenticity of transactions and data within smart contracts.
+鍵の管理、署名の検証、乱数の生成のための安全な暗号プラクティスを確立して、スマートコントラクト内のトランザクションとデータの完全性と真正性を保護します。
 
 ## S6.1 鍵管理 (Key Management)
 
 ### 管理目標
-Ensure secure handling and storage of private keys and implement robust signature verification processes to prevent unauthorized access and actions.
+秘密鍵の安全な取り扱いと保管を確保し、堅牢な署名検証プロセスを実装して、認可されていないアクセスやアクションを防ぎます。
 
 ### S6.1.A 秘密鍵の安全な処理と保管 (Secure Handling and Storage of Private Keys)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S6.1.A1      | Verify that the ecrecover() function handles malformed inputs correctly and does not return invalid data. |    | ✓  | ✓  |     |
-| S6.1.A2      | Ensure that signature verification mechanisms are robust against signature malleability and replay attacks, particularly by using nonces or hashed messages rather than relying solely on the signature itself. |    | ✓  | ✓  |     |
-| S6.1.A3      | Verify that SignatureChecker.isValidSignatureNow handles edge cases properly and does not revert unexpectedly, considering the ABI decoding issues introduced in Solidity 0.8. |    | ✓  | ✓  |     |
-| S6.1.A4      | Ensure that all signatures are checked thoroughly to prevent unauthorized transactions or actions due to weak or improperly managed signature validation. |    | ✓  | ✓  |     |
-| S6.1.A5      | Validate that signature protection mechanisms are up-to-date and resistant to signature malleability attacks by avoiding outdated libraries and practices. |    | ✓  | ✓  |     |
+| S6.1.A1      | ecrecover() 関数が不正な入力を正しく処理し、無効なデータを返さないことを検証します。 |    | ✓  | ✓  |     |
+| S6.1.A2      | 特に、署名自体にのみ依存するのではなく、ノンスやハッシュ化されたメッセージを使用することで、署名検証メカニズムが署名の可変性やリプレイ攻撃に対して堅牢であることを確認します。 |    | ✓  | ✓  |     |
+| S6.1.A3      | Solidity 0.8 で導入された ABI デコードの問題を考慮して、SignatureChecker.isValidSignatureNow がエッジケースを適切に処理し、予期せず元に戻らないことを検証します。 |    | ✓  | ✓  |     |
+| S6.1.A4      | すべての署名が徹底的にチェックされ、脆弱または不適切に管理された署名バリデーションによる認可されていないトランザクションやアクションを防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S6.1.A5      | 古いライブラリやプラクティスを避けることで、署名保護メカニズムが最新であり、署名可変性攻撃に対する耐性があることを検証します。 |    | ✓  | ✓  |     |
 
 ### S6.1.B マルチ署名ウォレット (Multi-Signature Wallets)
 
