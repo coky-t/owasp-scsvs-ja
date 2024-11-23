@@ -42,7 +42,7 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S6.2.B1      | Verify that ECDSA signature handling functions, such as ECDSA.recover and ECDSA.tryRecover, properly manage signature formats to prevent signature malleability, especially when handling both traditional 65-byte and EIP-2098 compact signatures. |    | ✓  | ✓  |     |
+| S6.2.B1      | ECDSA.recover や ECDSA.tryRecover などの ECDSA 署名処理関数が、特に従来の 65 バイト署名と EIP-2098 コンパクト署名の両方を署名する場合に、署名の可変性を防ぐために署名フォーマットを適切に管理していることを検証します。 |    | ✓  | ✓  |     |
 
 ## S6.3 安全な乱数生成 (Secure Random Number Generation)
 
