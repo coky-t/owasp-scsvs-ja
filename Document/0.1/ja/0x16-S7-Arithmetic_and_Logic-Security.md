@@ -26,7 +26,7 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S7.1.B1      | Verify that fixed-point arithmetic operations are performed safely to prevent overflow, underflow, and precision loss. |    | ✓  | ✓  |     |
+| S7.1.B1      | 固定小数点算術演算が安全に実行され、オーバーフロー、アンダーフロー、精度低下を防いでいることを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S7.2 算術の完全性 (Arithmetic Integrity)
