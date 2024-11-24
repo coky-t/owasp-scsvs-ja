@@ -22,7 +22,7 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S8.1.B1      | Ensure that try/catch blocks are provided with adequate gas to avoid failures and unexpected behavior in case of errors. |    | ✓  | ✓  |     |
+| S8.1.B1      | try/catch ブロックには十分なガスが提供され、エラー時の失敗や予期しない動作を回避することを確認します。 |    | ✓  | ✓  |     |
 
 
 ## S8.2 資源枯渇に対する耐性 (Resilience Against Resource Exhaustion)
