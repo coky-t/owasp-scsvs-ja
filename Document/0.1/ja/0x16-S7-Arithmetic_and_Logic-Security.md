@@ -53,8 +53,8 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S7.2.B1      | Ensure that multiplication is performed before division to maintain precision in calculations. |    | ✓  | ✓  |     |
-| S7.2.B2      | Ensure that the request confirmation number is high enough to mitigate risks associated with chain re-orgs. |    | ✓  | ✓  |     |
-| S7.2.B3      | Verify that off-by-one errors are avoided in loops and iterations, ensuring correct handling of list lengths and indexing. |    | ✓  | ✓  |     |
-| S7.2.B4      | Verify that unsigned integers are not used to represent negative values, as this can lead to erroneous behavior. |    | ✓  | ✓  |     |
-| S7.2.B5      | Verify that calculations with multiple terms handle all possible edge cases for min/max values to avoid errors. |    | ✓  | ✓  |     |
+| S7.2.B1      | 乗算が除算の前に実行され、計算の精度を維持していることを確認します。 |    | ✓  | ✓  |     |
+| S7.2.B2      | リクエスト確認番号がチェーン再構成に伴うリスクを軽減するのに十分に高いことを確認します。 |    | ✓  | ✓  |     |
+| S7.2.B3      | ループとイテレーションで off-by-one エラーが回避され、リストの長さとインデックスを正しく処理することを確保していることを検証します。 |    | ✓  | ✓  |     |
+| S7.2.B4      | 符号なし整数が負の値を表すために使用されていないことを検証します。これは誤った動作につながる可能性があります。 |    | ✓  | ✓  |     |
+| S7.2.B5      | 複数の項を持つ計算が最小値/最大値のすべての可能なエッジケースを処理して、エラーを回避することを検証します。 |    | ✓  | ✓  |     |
