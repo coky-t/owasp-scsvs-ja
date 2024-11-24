@@ -28,15 +28,15 @@
 ## S8.2 資源枯渇に対する耐性 (Resilience Against Resource Exhaustion)
 
 ### 管理目標
-Implement strategies to protect contracts from resource exhaustion attacks that can lead to DoS scenarios.
+戦略を実装して、DoS シナリオにつながる可能性のあるリソース枯渇攻撃から保護します。
 
 ### S8.2.A レート制限 (Rate Limiting)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S8.2.A1      | Avoid using blocking mechanisms that could lead to a Denial-of-Service (DoS) attack. |    | ✓  | ✓  |     |
-| S8.2.A2      | Protect against potential DoS in functions like supportsERC165InterfaceUnchecked() by handling excessive data queries efficiently. |    | ✓  | ✓  |     |
-| S8.2.A3      | Ensure that assertions do not lead to denial of service or unexpected contract reverts, especially in scenarios where conditions are not met. |    | ✓  | ✓  |     |
-| S8.2.A4      | Verify that return values from external function calls are checked to prevent issues related to unchecked return values, which could lead to unexpected behavior. |    | ✓  | ✓  |     |
-| S8.2.A5      | Ensure that contract functions are protected against denial of service due to unexpected reverts by handling all possible error conditions appropriately. |    | ✓  | ✓  |     |
-| S8.2.A6      | Ensure that functions such as supportsERC165InterfaceUnchecked() in ERC165Checker.sol handle large data queries efficiently to avoid excessive resource consumption. |    | ✓  | ✓  |     |
+| S8.2.A1      | サービス拒否 (DoS) 攻撃につながる可能性のあるブロッキングメカニズムの使用を避けます。 |    | ✓  | ✓  |     |
+| S8.2.A2      | 過剰なデータクエリを効率的に処理することで、supportsERC165InterfaceUnchecked() のような関数における潜在的な DoS から保護します。 |    | ✓  | ✓  |     |
+| S8.2.A3      | 特に条件が満たされないシナリオで、アサーションがサービス拒否や予期しないコントラクトの差し戻しにつながらないことを確認します。 |    | ✓  | ✓  |     |
+| S8.2.A4      | 外部関数呼び出しからの戻り値がチェックされ、予期しない動作につながる可能性がある、チェックされていない戻り値に関連する問題を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S8.2.A5      | 起こりうるすべてのエラー状態を適切に処理することで、コントラクト関数が予期しない差し戻しによるサービス拒否から保護されていることを確認します。 |    | ✓  | ✓  |     |
+| S8.2.A6      | ERC165Checker.sol の supportsERC165InterfaceUnchecked() のような関数が大きなデータクエリを効率的に処理して、過剰なリソース消費を回避することを確認します。 |    | ✓  | ✓  |     |
