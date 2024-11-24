@@ -1,22 +1,22 @@
 # S8. サービス拒否 (Denial of Service (DoS))
 
 ## 管理目標
-Establish practices and mechanisms to prevent Denial of Service (DoS) attacks that can disrupt contract functionality and availability.
+プラクティスとメカニズムを確立して、コントラクトの機能とか要請を妨げる可能性のあるサービス拒否 (DoS) 攻撃を防ぎます。
 
 
 ## S8.1 ガス制限 (Gas Limits)
 
 ### 管理目標
-Ensure that contract design and function implementations are efficient in gas usage to mitigate risks associated with out-of-gas errors and related vulnerabilities.
+コントラクト設計と機能実装がガス使用に効率的であり、out-of-gas エラーや関連する脆弱性に関連するリスクを軽減することを確認します。
 
 ### S8.1.A 効率的なループと関数の設計 (Efficient Loop and Function Design)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S8.1.A1      | Ensure that contracts are protected against insufficient gas griefing attacks by carefully managing gas consumption in critical functions. |    | ✓  | ✓  |     |
-| S8.1.A2      | Ensure that systems like the RocketDepositPool contract handle failures in functions like burn() gracefully. |    | ✓  | ✓  |     |
-| S8.1.A3      | Verify that gas usage in functions and loops is efficient to avoid out-of-gas errors. |    | ✓  | ✓  |     |
-| S8.1.A4      | Implement mechanisms to prevent denial of service attacks due to block gas limits, ensuring that transactions or operations do not exceed the gas limit constraints. |    | ✓  | ✓  |     |
+| S8.1.A1      | 重要な機能のガス消費を慎重に管理することで、コントラクトが不十分なガスのグリーフィング攻撃から保護されていることを確認します。 |    | ✓  | ✓  |     |
+| S8.1.A2      | RocketDepositPool コントラクトのようなシステムが burn() のような関数の失敗を適切に処理することを確認します。 |    | ✓  | ✓  |     |
+| S8.1.A3      | 関数とループのガス使用が効率的であり、out-of-gas エラーを回避することを検証します。 |    | ✓  | ✓  |     |
+| S8.1.A4      | ブロックガス制限によるサービス拒否攻撃を防ぐメカニズムを実装して、トランザクションや操作がガス制限の制約を超えないことを確保します。 |    | ✓  | ✓  |     |
 
 ### S8.1.B フォールバックメカニズム (Fallback Mechanisms)
 
