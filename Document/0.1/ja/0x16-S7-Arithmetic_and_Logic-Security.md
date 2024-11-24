@@ -1,7 +1,7 @@
-# S7. 算術とロジックのセキュリティ (Arithmetic and Logic Security)
+# S7. 算術と論理のセキュリティ (Arithmetic and Logic Security)
 
 ## 管理目標
-安全な算術とロジックのプラクティスを確立して、オーバーフロー/アンダーフローなどの脆弱性を防ぎ、スマートコントラクト内の計算の完全性を確保します。
+安全な算術と論理のプラクティスを確立して、オーバーフロー/アンダーフローなどの脆弱性を防ぎ、スマートコントラクト内の計算の完全性を確保します。
 
 
 ## S7.1 オーバーフロー/アンダーフローの防止 (Preventing Overflow/Underflow)
@@ -26,27 +26,27 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S7.1.B1      | 固定小数点算術演算が安全に実行され、オーバーフロー、アンダーフロー、精度低下を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S7.1.B1      | 固定小数点算術演算が安全に実行され、オーバーフロー、アンダーフロー、精度損失を防いでいることを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S7.2 算術の完全性 (Arithmetic Integrity)
 
 ### 管理目標
-Ensure that all calculations and logical operations within the smart contract are performed correctly to maintain data integrity and prevent manipulation.
+スマートコントラクト内のすべての計算と論理演算が正しく実行され、データの完全性を維持して、操作を防いでいることを確認します。
 
-### S7.2.A 安全な計算とロジック (Secure Calculations and Logic)
+### S7.2.A 安全な計算と論理 (Secure Calculations and Logic)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S7.2.A1      | Ensure that price or rate calculations derived from asset balances are protected from manipulation, considering attack vectors like flash loans and donations. |    | ✓  | ✓  |     |
-| S7.2.A2      | Ensure that the use of structs and arrays does not lead to data corruption or incorrect values due to storage encoding issues. |    | ✓  | ✓  |     |
-| S7.2.A3      | Avoid operations that could lead to unintended data type conversions or precision loss by ensuring arithmetic operations are performed correctly. |    | ✓  | ✓  |     |
-| S7.2.A4      | Enforce a minimum transaction amount to prevent attackers from clogging the network with zero amount or dust transactions. |    | ✓  | ✓  |     |
-| S7.2.A5      | Validate that financial operations respect associative properties, ensuring consistent outcomes whether operations are performed in aggregate or iteratively. |    | ✓  | ✓  |     |
-| S7.2.A6      | Implement proper rounding direction for calculations where accounting relies on user shares to avoid inaccuracies. |    | ✓  | ✓  |     |
-| S7.2.A7      | Validate that inequalities and comparisons are correctly implemented to handle edge values appropriately. |    | ✓  | ✓  |     |
-| S7.2.A8      | Ensure that abi.decode adheres to the type limits to avoid reverts due to overflow of target types. |    | ✓  | ✓  |     |
-| S7.2.A9 | Ensure that logical operators such as `==`, `!=`, `&&`, `||`, and `!` are used correctly, especially when test coverage may be limited. |  | ✓  | ✓  |  |
+| S7.2.A1      | フラッシュローンや寄付などの攻撃ベクトルを考慮して、資産残高から導き出される価格やレートの計算が操作から保護されていることを確認します。 |    | ✓  | ✓  |     |
+| S7.2.A2      | 構造体と配列の使用がストレージのエンコーディング問題によるデータ破損や不正確な値につながらないことを確認します。 |    | ✓  | ✓  |     |
+| S7.2.A3      | 算術演算が正しく実行されるようにすることで、意図しないデータ型変換や精度損失につながる可能性のある演算を回避します。 |    | ✓  | ✓  |     |
+| S7.2.A4      | 最小トランザクション金額を強制して、攻撃者がゼロ金額やダストトランザクションでネットワークを詰まらせることを防ぎます。 |    | ✓  | ✓  |     |
+| S7.2.A5      | 金融演算が結合法則を尊重することを検証して、演算が集約的に実行されても反復的に実行されても一貫した結果を確保します。 |    | ✓  | ✓  |     |
+| S7.2.A6      | 会計がユーザーシェアに依存する計算に対して適切な丸め方向を実装して、不正確さを回避します。 |    | ✓  | ✓  |     |
+| S7.2.A7      | 不等式と比較が正しく実装され、エッジ値を適切に処理することを検証します。    |    | ✓  | ✓  |     |
+| S7.2.A8      | abi.decode が型制限を準拠して、ターゲット型のオーバーフローによる差し戻しを回避することを確認します。 |    | ✓  | ✓  |     |
+| S7.2.A9      | 特にテストカバレッジが制限される可能性がある場合は、`==`, `!=`, `&&`, `||`, `!` などの論理演算子が正しく使用されていることを確認します。 |  | ✓  | ✓  |  |
 
 
 ### S7.2.B 前提条件と事後条件のチェック (Precondition and Postcondition Checks)
