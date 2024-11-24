@@ -1,35 +1,35 @@
-# S7. 演算とロジックのセキュリティ (Arithmetic and Logic Security)
+# S7. 算術とロジックのセキュリティ (Arithmetic and Logic Security)
 
 ## 管理目標
-Establish secure arithmetic and logic practices to prevent vulnerabilities such as overflow/underflow and ensure the integrity of calculations within smart contracts.
+安全な算術とロジックのプラクティスを確立して、オーバーフロー/アンダーフローなどの脆弱性を防ぎ、スマートコントラクト内の計算の完全性を確保します。
 
 
 ## S7.1 オーバーフロー/アンダーフローの防止 (Preventing Overflow/Underflow)
 
 ### 管理目標
-Implement safe arithmetic practices to prevent overflow and underflow vulnerabilities that can compromise contract functionality and security.
+安全な算術プラクティスを実装して、コントラクトの機能やセキュリティを脅かす可能性のあるオーバーフローやアンダーフローの脆弱性を防ぎます。
 
 ### S7.1.A 安全な数学ライブラリの使用 (Use of Safe Math Libraries)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S7.1.A1      | Verify that explicit type casting does not lead to overflow or underflow issues. |    | ✓  | ✓  |     |
-| S7.1.A2      | Verify that integer arithmetic operations do not exceed their bounds to prevent integer overflow or underflow vulnerabilities. |    | ✓  | ✓  |     |
-| S7.1.A3      | Ensure that operations involving time units and other expressions handle potential overflows correctly. |    | ✓  | ✓  |     |
-| S7.1.A4      | Verify that division by zero is correctly handled and causes a transaction revert to prevent unexpected behavior. |    | ✓  | ✓  |     |
-| S7.1.A5      | Ensure that variables are managed within their bounds to prevent reverts due to exceeding limits. |    | ✓  | ✓  |     |
-| S7.1.A6      | Ensure that arithmetic operations within the unchecked{} block are carefully managed to prevent unintentional overflow or underflow. |    | ✓  | ✓  |     |
-| S7.1.A7      | Confirm that inline assembly operations handle division by zero and overflow/underflow according to desired behavior and revert appropriately. |    | ✓  | ✓  |     |
-| S7.1.A8      | Implement checks to handle cases where operations might introduce unintended precision issues or rounding errors. |    | ✓  | ✓  |     |
+| S7.1.A1      | 明示的な型キャストがオーバーフローやアンダーフローにつながらないことを検証します。 |    | ✓  | ✓  |     |
+| S7.1.A2      | 整数算術演算がその境界を超えず、整数オーバーフローやアンダーフローの脆弱性を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S7.1.A3      | 時間単位やその他の式を含む演算が潜在的なオーバーフローを正しく処理することを確認します。 |    | ✓  | ✓  |     |
+| S7.1.A4      | ゼロによる除算が正しく処理され、トランザクションを元に戻して、予期しない動作を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S7.1.A5      | 変数が境界内で管理され、制限を超えたことによる差し戻しを防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S7.1.A6      | unchecked{} ブロック内の算術演算は慎重に管理され、意図しないオーバーフローやアンダーフローを防いでいることを確認します。 |    | ✓  | ✓  |     |
+| S7.1.A7      | インラインアセンブリ演算がゼロによる除算とオーバーフロー/アンダーフローを望ましい動作に従って処理して、適切に戻すことを確認します。 |    | ✓  | ✓  |     |
+| S7.1.A8      | 演算によって意図しない精度の問題や丸め誤差につながるかもしれない場合に対処するためのチェックを実装します。 |    | ✓  | ✓  |     |
 
-### S7.1.B 固定小数点演算 (Fixed-Point Arithmetic)
+### S7.1.B 固定小数点算術 (Fixed-Point Arithmetic)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
 | S7.1.B1      | Verify that fixed-point arithmetic operations are performed safely to prevent overflow, underflow, and precision loss. |    | ✓  | ✓  |     |
 
 
-## S7.2 演算の完全性 (Arithmetic Integrity)
+## S7.2 算術の完全性 (Arithmetic Integrity)
 
 ### 管理目標
 Ensure that all calculations and logical operations within the smart contract are performed correctly to maintain data integrity and prevent manipulation.
