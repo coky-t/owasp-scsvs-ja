@@ -50,14 +50,14 @@ vault システム内での安全な資産保管と管理を確保します。
 ## S11.4 流動的ステーキング (Liquid Staking)
 
 ### 管理目標
-Ensure secure staking mechanisms to protect users' assets.
+安全なステーキングメカニズムを確保して、ユーザーの資産を保護します。
 
 ### S11.4.A 安全なステーキングメカニズム (Secure Staking Mechanisms)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S11.4.A1     | Verify that mechanisms for detaching sfrxETH from frxETH are robust to prevent discrepancies and ensure accurate reward transfers, particularly when controlled by centralized entities. |    | ✓  | ✓  |     |
-| S11.4.A2     | Monitor potential future changes in the sfrxETH/ETH rate and ensure users are adequately forewarned to mitigate risks associated with rate fluctuations. |    | ✓  | ✓  |     |
+| S11.4.A1     | 特に一元管理されたエンティティにより制御されている場合、sfrxETH を frxETH からデタッチするメカニズムが堅牢であり、不整合を防ぎ、正確な報酬の転送を確保していることを検証します。 |    | ✓  | ✓  |     |
+| S11.4.A2     | sfrxETH/ETH レートの将来の潜在的な変化を監視して、ユーザーに十分な事前警告が届き、レート変動に関連するリスクを軽減することを確保します。 |    | ✓  | ✓  |     |
 
 
 ## S11.5 流動性プール (AMM) (Liquidity Pools (AMMs))
