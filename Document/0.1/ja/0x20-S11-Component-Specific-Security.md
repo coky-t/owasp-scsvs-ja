@@ -1,23 +1,23 @@
 # S11. コンポーネント固有のセキュリティ (Component-Specific Security)
 
 ## 管理目標
-Establish security practices and standards for various blockchain components to mitigate specific vulnerabilities associated with tokens, NFTs, vaults, and liquidity pools.
+さまざまなブロックチェーンコンポーネントのセキュリティプラクティスと標準を確立して、トークン、NFT、vault、流動性プールに関連する特定の脆弱性を軽減します。
 
 ## S11.1 トークン (ERC20, ERC721, ERC1155) (Tokens (ERC20, ERC721, ERC1155))
 
 ### 管理目標
-Ensure secure implementation and management of token standards to prevent vulnerabilities.
+トークン標準の安全な実装と管理を確保して、脆弱性を防ぎます。
 
 ### S11.1.A 安全な実装と管理 (Secure Implementation and Management)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S11.1.A1     | Verify that the totalSupply value is consistent during token minting operations, ensuring that callbacks do not result in incorrect values. |    | ✓  | ✓  |     |
-| S11.1.A2     | Some tokens have multiple addresses associated with them, which can introduce vulnerabilities. Ensure all token addresses are managed and verified securely to avoid related risks. |    | ✓  | ✓  |     |
-| S11.1.A3     | Verify that tokens handle zero amount transfers properly to prevent issues in integrations and operations. |    | ✓  | ✓  |     |
-| S11.1.A4     | Verify that tokens handle zero amount transfers properly to prevent issues in integrations and operations. |    | ✓  | ✓  |     |
-| S11.1.A5     | Some tokens revert on the transfer of a zero amount, which can cause issues in certain integrations and operations. Ensure compatibility with such tokens to avoid integration problems. |    | ✓  | ✓  |     |
-| S11.1.A6     | Not all ERC20 tokens comply with the EIP20 standard; some may not return a boolean flag or revert on failure. Verify compliance with the ERC20 standard to avoid compatibility issues. |    | ✓  | ✓  |     |
+| S11.1.A1     | トークンミント操作時に totalSupply 値が一貫しており、コールバックによって正しくない値につながらないことを確保します。 |    | ✓  | ✓  |     |
+| S11.1.A2     | 一部のトークンには複数のアドレスが関連付けられており、脆弱性が生じる可能性があります。すべてのトークンアドレスが安全に管理および検証され、関連するリスクを回避していることを確認します。 |    | ✓  | ✓  |     |
+| S11.1.A3     | トークンがゼロ金額の転送を適切に処理し、統合と操作での問題を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S11.1.A4     | トークンがゼロ金額の転送を適切に処理し、統合と操作での問題を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S11.1.A5     | 一部のトークンではゼロ金額の転送で差し戻し、特定の統合と操作で問題を生じる可能性があります。そのようなトークンとの互換性を確保し、統合の問題を回避します。 |    | ✓  | ✓  |     |
+| S11.1.A6     | すべての ERC20 トークンが EIP20 標準に準拠しているわけではありません。一部はブールフラグを返さないか、失敗時に差し戻さない可能性があります。ERC20 標準に準拠していることを検証して、互換性問題を回避します。 |    | ✓  | ✓  |     |
 
 
 ## S11.2 NFT セキュリティ (NFT Security)
