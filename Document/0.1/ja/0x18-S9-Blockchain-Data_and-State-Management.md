@@ -22,7 +22,7 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.1.B1      | Verify that global state updates are correctly handled when working with memory copies to ensure accurate state management. |    | ✓  | ✓  |     |
+| S9.1.B1      | メモリコピーを行う際にグローバル状態の更新が正しく処理され、正確な状態管理を確保することを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S9.2 データプライバシー (Data Privacy)
