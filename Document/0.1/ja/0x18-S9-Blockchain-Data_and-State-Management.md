@@ -74,8 +74,8 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.3.B1      | Implement tools and processes for analyzing event logs to detect anomalies or unauthorized changes. |    | ✓  | ✓  |     |
-| S9.3.B2      | Set up alerts for unusual patterns or discrepancies in logged events. |    | ✓  | ✓  |     |
+| S9.3.B1      | イベントログを分析するためのツールとプロセスを導入して、異常や認可されていない変更を検出します。 |    | ✓  | ✓  |     |
+| S9.3.B2      | ログ記録されたイベントの異常なパターンや不整合に対してアラートをセットアップします。 |    | ✓  | ✓  |     |
 
 
 ## S9.4 分散ストレージ (Decentralized Storage)
