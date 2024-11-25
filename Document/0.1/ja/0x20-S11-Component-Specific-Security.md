@@ -76,10 +76,10 @@ vault システム内での安全な資産保管と管理を確保します。
 ## S11.6 Uniswap V4 フック (Uniswap V4 Hook)
 
 ### 管理目標
-Ensure secure integration and customization of Uniswap components.
+Uniswap コンポーネントの安全な統合とカスタマイズを確保します。
 
 ### S11.6.A 安全な統合とカスタマイズ (Secure Integration and Customization)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S11.6.A1     | Verify the correct usage of Uniswap’s TickMath and FullMath libraries to ensure proper handling of unchecked arithmetic operations, adhering to version-specific Solidity considerations. |    | ✓  | ✓  |     |
+| S11.6.A1     | Uniswap の TickMath および FullMath ライブラリの正しい使用状況を検証して、バージョン固有の Solidity の考慮事項に従って、チェックされていない算術演算の適切な処理を確保していることを検証します。 |    | ✓  | ✓  |     |
