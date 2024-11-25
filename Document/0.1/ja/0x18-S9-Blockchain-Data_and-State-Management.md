@@ -81,11 +81,11 @@
 ## S9.4 分散ストレージ (Decentralized Storage)
 
 ### 管理目標
-Ensure data integrity, security, and availability for data stored in decentralized storage solutions.
+分散ストレージソリューションに保存されているデータの完全性、セキュリティ、可用性を確保します。
 
 ### S9.4.A IPFS, Arweave (IPFS, Arweave)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.4.A1      | Ensure that data stored on decentralized platforms like IPFS or Arweave is encrypted and access-controlled. |    | ✓  | ✓  |     |
-| S9.4.A2      | Implement mechanisms for data redundancy and backup to ensure data availability. |    | ✓  | ✓  |     |
+| S9.4.A1      | IPFS や Arweave などの分散プラットフォームに保存されているデータが暗号化され、アクセス制御されていることを確認します。 |    | ✓  | ✓  |     |
+| S9.4.A2      | データの冗長性とバックアップのメカニズムを実装して、データの可用性を確保します。 |    | ✓  | ✓  |     |
