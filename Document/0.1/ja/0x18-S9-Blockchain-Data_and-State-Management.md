@@ -55,8 +55,8 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.2.D1      | Verify that confidential contracts use cryptographic techniques to hide contract state and execution details from unauthorized parties. |    | ✓  | ✓  |     |
-| S9.2.D2      | Ensure that only parties with appropriate permissions can access data within confidential contracts. |    | ✓  | ✓  |     |
+| S9.2.D1      | 機密コントラクトでは暗号技法を使用して、認可されていないパーティからコントラクト状態と実行詳細を隠していることを検証します。 |    | ✓  | ✓  |     |
+| S9.2.D2      | 適切なパーミッションを持つパーティのみが機密コントラクト内のデータにアクセスできることを確認します。 |    | ✓  | ✓  |     |
 
 ## S9.3 イベントログ記録 (Event Logging)
 
