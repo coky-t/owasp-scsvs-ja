@@ -37,14 +37,14 @@
 ## S11.3 保管室 (Vaults)
 
 ### 管理目標
-Ensure secure asset storage and management within vault systems.
+vault システム内での安全な資産保管と管理を確保します。
 
 ### S11.3.A 安全な資産保管と管理 (Secure Asset Storage and Management)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S11.3.A1     | Address potential overhead issues associated with withdrawing stETH or wstETH, including queue times and withdrawal limits, to ensure smooth operations. |    | ✓  | ✓  |     |
-| S11.3.A2     | Handle conversions between stETH and wstETH carefully to avoid potential issues due to the rebasing nature of stETH. |    | ✓  | ✓  |     |
+| S11.3.A1     | キュー時間や引き出し制限など、stETH や wstETH の引き出しに関連する潜在的なオーバーヘッド問題に対処して、スムーズな操作を確保します。 |    | ✓  | ✓  |     |
+| S11.3.A2     | stETH と wstETH 間の変換を慎重に処理して、stETH のリベース特性による潜在的な問題を回避します。 |    | ✓  | ✓  |     |
 
 
 ## S11.4 流動的ステーキング (Liquid Staking)
