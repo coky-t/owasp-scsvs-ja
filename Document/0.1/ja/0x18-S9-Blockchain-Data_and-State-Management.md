@@ -48,8 +48,8 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.2.C1      | Verify that private transaction mechanisms (e.g., zk-SNARKs, zk-STARKs) are correctly implemented to ensure confidentiality of transaction details. |    | ✓  | ✓  |     |
-| S9.2.C2      | Ensure that private transactions maintain the integrity and validity of the blockchain. |    | ✓  | ✓  |     |
+| S9.2.C1      | プライベートトランザクションメカニズム (zk-SNARKs, zk-STARKs など) が正しく実装され、トランザクションの詳細の機密性を確保していることを検証します。 |    | ✓  | ✓  |     |
+| S9.2.C2      | プライベートトランザクションがブロックチェーンの完全性と有効性を維持していることを確認します。 |    | ✓  | ✓  |     |
 
 ### S9.2.D 機密コントラクト (Confidential Contracts)
 
