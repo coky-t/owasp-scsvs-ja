@@ -28,13 +28,13 @@
 ## S9.2 データプライバシー (Data Privacy)
 
 ### 管理目標
-Ensure that sensitive data within contracts is secured and that privacy measures are effectively implemented.
+コントラクト内の機密データが保護され、プライバシー対策が効果的に実施されていることを確認します。
 
 ### S9.2.A 機密データの安全性の確保 (Ensuring Sensitive Data is Secure)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.2.A1      | Ensure that private data marked in contracts is protected from unauthorized access through blockchain analysis. |    | ✓  | ✓  |     |
+| S9.2.A1      | コントラクトに記載された個人データがブロックチェーン分析を通じた認可されていないアクセスから保護されていることを確認します。 |    | ✓  | ✓  |     |
 
 ### S9.2.B ゼロ知識証明 (Zero-Knowledge Proofs)
 
