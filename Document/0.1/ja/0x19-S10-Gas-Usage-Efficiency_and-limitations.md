@@ -24,11 +24,11 @@
 ## S10.2 効率的なコントラクト設計 (Efficient Contract Design)
 
 ### 管理目標
-Design contracts efficiently to enhance performance and reduce gas costs through optimal architecture.
+コントラクトを効率的に設計して、最適なアーキテクチャを通じてパフォーマンスを向上し、ガスコストを削減します。
 
 ### S10.2.A レイヤー 2 ソリューション (Layer 2 Solutions)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S10.2.A1     | Explore and integrate Layer 2 scaling solutions (e.g., rollups, state channels) to improve transaction throughput and reduce gas costs. |    | ✓  | ✓  |     |
-| S10.2.A2     | Verify the security and reliability of Layer 2 solutions before integration. |    | ✓  | ✓  |     |
+| S10.2.A1     | レイヤー 2 スケーリングソリューション (ロールアップ、ステートチャネルなど) を調査して統合し、トランザクションスループットを向上し、ガスコストを削減します。 |    | ✓  | ✓  |     |
+| S10.2.A2     | 統合前にレイヤー 2 ソリューションのセキュリティと信頼性を検証します。 |    | ✓  | ✓  |     |
