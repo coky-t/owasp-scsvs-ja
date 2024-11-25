@@ -18,7 +18,7 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S10.1.B1     | Verify that transaction confirmation numbers are chosen appropriately to mitigate risks related to chain re-orgs and ensure reliable contract operation. |    | ✓  | ✓  |     |
+| S10.1.B1     | トランザクション確認番号が適切に選択され、チェーン再構成に関連するリスクを軽減して、信頼性の高いコントラクト操作を確保していることを検証します。 |    | ✓  | ✓  |     |
 
 
 ## S10.2 効率的なコントラクト設計 (Efficient Contract Design)
