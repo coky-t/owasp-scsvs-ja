@@ -40,9 +40,9 @@
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.2.B1      | Verify that zero-knowledge proofs are implemented to ensure privacy without revealing any underlying data. |    | ✓  | ✓  |     |
-| S9.2.B2      | Validate the correctness of proof generation and verification processes to prevent any potential leaks or exploits. |    | ✓  | ✓  |     |
-| S9.2.B3      | Ensure that zero-knowledge proofs are integrated seamlessly with the blockchain to maintain performance and security. |    | ✓  | ✓  |     |
+| S9.2.B1      | ゼロ知識証明が実装され、基礎となるデータを公開することなくプライバシーを確保していることを検証します。 |    | ✓  | ✓  |     |
+| S9.2.B2      | 証明生成と検証プロセスの正確性を検証して、潜在的な漏洩や悪用を防ぎます。 |    | ✓  | ✓  |     |
+| S9.2.B3      | ゼロ知識証明がブロックチェーンとシームレスに統合され、パフォーマンスとセキュリティを維持していることを確認します。 |    | ✓  | ✓  |     |
 
 ### S9.2.C プライベートトランザクション (Private Transactions)
 
