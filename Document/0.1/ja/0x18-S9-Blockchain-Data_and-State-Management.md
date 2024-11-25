@@ -61,14 +61,14 @@
 ## S9.3 イベントログ記録 (Event Logging)
 
 ### 管理目標
-Implement transparent and secure logging practices to ensure traceability and detect unauthorized changes.
+透明性があり安全なログ記録プラクティスを実装して、追跡可能性を確保し、認可されていない変更を検出します。
 
-### S9.3.A 透過で安全なログ記録プラクティス (Transparent and Secure Logging Practices)
+### S9.3.A 透明性があり安全なログ記録プラクティス (Transparent and Secure Logging Practices)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.3.A1      | Verify that events are emitted properly, especially for critical changes to ensure traceability and transparency. |    | ✓  | ✓  |     |
-| S9.3.A2      | Verify that the contract’s event logging correctly reflects critical changes to ensure transparency and traceability. |    | ✓  | ✓  |     |
+| S9.3.A1      | イベントが適切に発行され、特に重要な変更について、追跡可能性と透明性を確保していることを検証します。 |    | ✓  | ✓  |     |
+| S9.3.A2      | コントラクトのイベントログ記録が重要な変更を正しく反映して、透明性と追跡可能性を確保していることを検証します。 |    | ✓  | ✓  |     |
 
 ### S9.3.B ログ解析 (Log Analysis)
 
