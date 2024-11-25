@@ -63,13 +63,13 @@ vault システム内での安全な資産保管と管理を確保します。
 ## S11.5 流動性プール (AMM) (Liquidity Pools (AMMs))
 
 ### 管理目標
-Establish security measures in automated market makers.
+自動マーケットメーカーにおけるセキュリティ対策を確立します。
 
 ### S11.5.A 自動マーケットメーカーのセキュリティ (Security in Automated Market Makers)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S11.5.A1     | [WIP/Will be removed]                                                     |    |    |    |     |
+| S11.5.A1     | [WIP/Will be removed]                                                       |    |    |    |     |
 
 
 
