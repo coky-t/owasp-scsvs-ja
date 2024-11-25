@@ -1,22 +1,22 @@
 # S9. ブロックチェーンデータと状態管理 (Blockchain Data and State Management)
 
 ## 管理目標
-Establish practices for effective management of blockchain data and state to ensure security, efficiency, and integrity of contract interactions.
+ブロックチェーンのデータと状態を効果的に管理するプラクティスを確立して、コントラクトインタラクションのセキュリティ、効率性、完全性を確保します。
 
 ## S9.1 状態管理 (State Management)
 
 ### 管理目標
-Ensure efficient and secure handling of state within smart contracts to prevent data corruption and unexpected behavior.
+スマートコントラクト内の状態を効率的かつ安全に処理して、データ破損や予期しない動作を防ぐことを確認します。
 
 ### S9.1.A 効率的で安全な状態処理 (Efficient and Secure State Handling)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S9.1.A1      | Ensure that payable functions in contracts handle all ETH passed in msg.value and provide a mechanism for withdrawal to avoid ETH being locked in the contract. |    | ✓  | ✓  |     |
-| S9.1.A2      | Verify that deleting a variable of a nested structure correctly resets all nested level fields to default values to avoid unexpected behavior. |    | ✓  | ✓  |     |
-| S9.1.A3      | Verify that storage structs and arrays with types shorter than 32 bytes are handled correctly, avoiding data corruption when encoded directly from storage using the experimental ABIEncoderV2. |    | ✓  | ✓  |     |
-| S9.1.A4      | Verify that storage arrays containing structs or other statically-sized arrays are properly read and encoded in external function calls to prevent data corruption. |    | ✓  | ✓  |     |
-| S9.1.A5      | Ensure that copying bytes arrays from memory or calldata to storage handles empty arrays correctly, avoiding data corruption when the target array's length is increased subsequently without storing new data. |    | ✓  | ✓  |     |
+| S9.1.A1      | コントラクト内の payable 関数が msg.value で渡されるすべての ETH を処理して、ETH がコントラクト内でロックされることを避けるように withdraw のメカニズムを提供していることを確認します。 |    | ✓  | ✓  |     |
+| S9.1.A2      | ネストされた構造の変数を削除すると、ネストされたすべてのレベルのフィールドをデフォルト値に正しくリセットして、予期しない動作を回避することを検証します。 |    | ✓  | ✓  |     |
+| S9.1.A3      | 実験的な ABIEncoderV2 を使用してストレージから直接エンコードした際にデータ破損を回避し、32 バイトより短い型を持つストレージ構造体と配列が正しく処理されることを検証します。 |    | ✓  | ✓  |     |
+| S9.1.A4      | 構造体やその他の静的サイズの配列を含むストレージ配列が外部関数呼び出しで適切に読み込まれてエンコードされ、データ破損を防いでいることを検証します。 |    | ✓  | ✓  |     |
+| S9.1.A5      | memory または calldata からストレージにバイト配列をコピーする際に空の配列を正しく処理し、新しいデータを格納せずにターゲット配列の長さを後で増やした場合にデータ破損を回避することを確認します。 |    | ✓  | ✓  |     |
 
 ### S9.1.B 状態チャンネル (State Channels)
 
