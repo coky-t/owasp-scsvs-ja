@@ -23,15 +23,15 @@
 ## S11.2 NFT セキュリティ (NFT Security)
 
 ### 管理目標
-Implement best practices for non-fungible tokens to safeguard against vulnerabilities.
+非代替性トークンのベストプラクティスを実装して、脆弱性から保護します。
 
 ### S11.2.A 非代替性トークンのベストプラクティス (Best Practices for Non-Fungible Tokens)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S11.2.A1     | Implement standards and best practices for NFT creation, management, and transfer to prevent common vulnerabilities. |    | ✓  | ✓  |     |
-| S11.2.A2     | Ensure proper metadata integrity and prevent unauthorized minting or transfers. |    | ✓  | ✓  |     |
-| S11.2.A3     | Safeguard against potential exploits related to royalty payments or token burns. |    | ✓  | ✓  |     |
+| S11.2.A1     | NFT の作成、管理、転送に関する標準とベストプラクティスを実装して、一般的な脆弱性を防ぎます。 |    | ✓  | ✓  |     |
+| S11.2.A2     | 適切なメタデータの完全性を確保して、認可されていないミントと転送を防ぎます。 |    | ✓  | ✓  |     |
+| S11.2.A3     | ロイヤリティの支払いやトークンバーンに関連する潜在的な悪用から保護します。 |    | ✓  | ✓  |     |
 
 
 ## S11.3 保管室 (Vaults)
