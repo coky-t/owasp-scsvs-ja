@@ -1,18 +1,18 @@
 # S10. ガスの使用量、効率、制限 (Gas Usage, Efficiency, and Limitations)
 
 ## 管理目標
-Establish practices for optimizing gas usage and efficiency in smart contracts to minimize costs and enhance performance.
+スマートコントラクトにおけるガス使用量と効率を最適化するためのプラクティスを確立して、コストを最小限に抑え、パフォーマンスを向上します。
 
 ## S10.1 ガス使用の最適化 (Optimizing Gas Usage)
 
 ### 管理目標
-Ensure gas consumption is minimized to promote cost-effective execution of smart contracts.
+ガス消費を最小限に抑えて、スマートコントラクトのコスト効果の高い実行を促進していることを確認します。
 
 ### S10.1.A ガスコストと制限の理解 (Understanding Gas Costs and Limits)
 
 | 参照コード   | 要件                                                                        | L1 | L2 | L3 | SWE |
 | ------------ | --------------------------------------------------------------------------- | -- | -- | -- | --- |
-| S10.1.A1     | Implement best practices for optimizing gas consumption to ensure cost-effective and efficient contract execution. |    | ✓  | ✓  |     |
+| S10.1.A1     | ガス消費を最適化するためのベストプラクティスを実装し、コスト効果と効率に優れたコントラクト実行を確保します。 |    | ✓  | ✓  |     |
 
 ### S10.1.B ガス推定ツール (Gas Estimation Tools)
 
