@@ -2,7 +2,7 @@
 
 <img src="./assets/images/scsvs-banner.png" width="700px">
 
-[![OWASP Incubator](https://img.shields.io/badge/owasp-incubator-blue.svg)](https://owasp.org/www-project-smart-contract-security-verification-standard)
+[![OWASP Incubator](https://img.shields.io/badge/owasp-incubator-blue.svg)](https://owasp.org/owasp-scsvs)
 [![Creative Commons License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA 4.0")
 
 ## はじめに
@@ -11,15 +11,15 @@ OWASP Smart Contract Security Verification Standard (SCSVS) プロジェクト�
 
 本標準は、スマートコントラクト、分散型アプリケーション (dApps)、EVM ベースのブロックチェーンシステムに関連する特定のセキュリティリスクと懸念に対処するガイドラインを提供し、スマートコントラクト開発におけるセキュリティの中核となる原則に焦点を当てています。
 
-私たちは、多大な時間を割いたり、資金面でプロジェクトを支援してくださった団体を「[サポーター](https://github.com/OWASP/www-project-smart-contract-security-verification-standard/blob/main/SUPPORTERS.md)」ページで感謝の意を表します！
+私たちは、多大な時間を割いたり、資金面でプロジェクトを支援してくださった団体を「[サポーター](https://github.com/OWASP/owasp-scsvs/blob/main/SUPPORTERS.md)」ページで感謝の意を表します！
 
-**バグを見つけたりアイデアがある場合は [issues を記録](https://github.com/OWASP/www-project-smart-contract-security-verification-standard/issues) してください。その後、issue での議論に基づいて [プルリクエストを開く](https://github.com/OWASP/www-project-smart-contract-security-verification-standard/pulls) ようにお願いすることがあります。**
+**バグを見つけたりアイデアがある場合は [issues を記録](https://github.com/OWASP/owasp-scsvs/issues) してください。その後、issue での議論に基づいて [プルリクエストを開く](https://github.com/OWASP/owasp-scsvs/pulls) ようにお願いすることがあります。**
 
 ## 初期ドラフトバージョン - 0.0.1
 
 最新の安定バージョンはバージョン 0.0.1 (2024 年 9 月付) で、以下にあります。
 
-* [OWASP Smart Contract Security Verification Standard 0.0.1 English (PDF)](https://github.com/OWASP/www-project-smart-contract-security-verification-standard/releases/download/v0.0.1/OWASP_Smart_Contract_Security_Verification_Standard-0.0.1_en.pdf)
+* [OWASP Smart Contract Security Verification Standard 0.0.1 English (PDF)](https://github.com/OWASP/owasp-scsvs/releases/download/v0.0.1/OWASP_Smart_Contract_Security_Verification_Standard-0.0.1_en.pdf)
 
 このリポジトリのマスターブランチは常に "bleeding edge version" となり、進行中の変更やその他の編集が開いている可能性があります。
 
