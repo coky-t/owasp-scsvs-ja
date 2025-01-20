@@ -1,11 +1,13 @@
 # OWASP Smart Contract Security Verification Standard ja
 
-This is the unofficial Japanese translation of the [OWASP Smart Contract Security Verification Standard](https://github.com/OWASP/owasp-scsvs).
+This is the unofficial Japanese translation of the [OWASP Smart Contract Security Verification Standard](https://github.com/OWASP/www-project-smart-contract-security-verification-standard).
 
 ### Originator
 
-- Project Site - <https://owasp.org/owasp-scsvs/>
-- Project Repository - <https://github.com/OWASP/owasp-scsvs>
+- SCS Official Site - <https://scs.owasp.org/>
+- SCS Document Site - <https://scs.owasp.org/SCSVS/>
+- Project Site - <https://owasp.org/www-project-smart-contract-security-verification-standard/>
+- Project Repository - <https://github.com/OWASP/www-project-smart-contract-security-verification-standard>
 
 # OWASP スマートコントラクトセキュリティ検証標準 0.0.1 日本語版
 
