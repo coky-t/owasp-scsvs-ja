@@ -9,7 +9,7 @@ This is the unofficial Japanese translation of the [OWASP Smart Contract Securit
 - Project Site - <https://owasp.org/www-project-smart-contract-security-verification-standard/>
 - Project Repository - <https://github.com/OWASP/www-project-smart-contract-security-verification-standard>
 
-# OWASP スマートコントラクトセキュリティ検証標準 0.0.1 日本語版
+## OWASP スマートコントラクトセキュリティ検証標準 0.0.1 日本語版
 
 * [OWASP スマートコントラクトセキュリティ検証標準](Document/README.md)
 * [リーダー](Document/leaders.md)
